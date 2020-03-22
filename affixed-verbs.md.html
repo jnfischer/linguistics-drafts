@@ -1,0 +1,5051 @@
+<!DOCTYPE html>
+<html data-markdown-preview-plus-context="html-export">
+  <head>
+    <meta charset="utf-8" />
+    <title>affixed-verbs.md</title>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 30px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+body {
+  overflow: initial !important;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 30px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+body > *:first-child {
+  margin-top: 0 !important;
+}
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+body .absent {
+  color: #c00;
+}
+body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+body .anchor:focus {
+  outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+body h1 tt,
+body h2 tt,
+body h3 tt,
+body h4 tt,
+body h5 tt,
+body h6 tt,
+body h1 code,
+body h2 code,
+body h3 code,
+body h4 code,
+body h5 code,
+body h6 code {
+  font-size: inherit;
+}
+body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+body h1 .anchor {
+  line-height: 1;
+}
+body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+body h2 .anchor {
+  line-height: 1;
+}
+body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+body h3 .anchor {
+  line-height: 1.2;
+}
+body h4 {
+  font-size: 1.25em;
+}
+body h4 .anchor {
+  line-height: 1.2;
+}
+body h5 {
+  font-size: 1em;
+}
+body h5 .anchor {
+  line-height: 1.1;
+}
+body h6 {
+  font-size: 1em;
+  color: #777;
+}
+body h6 .anchor {
+  line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+body ul,
+body ol {
+  padding-left: 2em;
+}
+body ul.no-list,
+body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body li > p {
+  margin-top: 16px;
+}
+body dl {
+  padding: 0;
+}
+body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+body blockquote > :first-child {
+  margin-top: 0;
+}
+body blockquote > :last-child {
+  margin-bottom: 0;
+}
+body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+body table th {
+  font-weight: bold;
+}
+body table th,
+body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .emoji {
+  max-width: none;
+}
+body span.frame {
+  display: block;
+  overflow: hidden;
+}
+body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+body span.frame span img {
+  display: block;
+  float: left;
+}
+body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+body span.float-left span {
+  margin: 13px 0 0;
+}
+body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+body code,
+body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+body code:before,
+body tt:before,
+body code:after,
+body tt:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+body code br,
+body tt br {
+  display: none;
+}
+body del code {
+  text-decoration: inherit;
+}
+body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+body .highlight {
+  margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+body pre {
+  word-wrap: normal;
+}
+body pre code,
+body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+body pre code:before,
+body pre tt:before,
+body pre code:after,
+body pre tt:after {
+  content: normal;
+}
+body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+span.critic.comment > span {
+  background-color: #fff;
+}
+a {
+  color: #337ab7;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #e5c07b;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>Affixed Verbs in Latin, English, and German</h1>
+<p>by <a href="https://github.com/jnfischer">John Fischer</a></p>
+<p><strong>NOTE: This is a temporary draft! Final version to be published elsewhere after revisions.</strong></p>
+<h2>Introduction</h2>
+<p>Latin employs prefixing to allow the production of words with additional shades of meaning; this is especially prominent in verbs. Many prefixed verbs have even taken on new shades of meaning beyond what would be implied solely by the root and prefix. This ‘grid’ of prefixed root verbs, with its thousands of distinct meanings, has been inherited (and often also partially reborrowed) by the Romance languages. The English language, having borrowed extensively from French and Latin, has also come to rely on the Latin prefixed verb system for a significant portion of its vocabulary.</p>
+<p>The historical <a href="https://en.wikipedia.org/wiki/Dialect_continuum#Continental_West_Germanic_continuum">Continental West Germanic dialect continuum</a>, in which different varieties’ lexicons have readily cross-pollinated, cultivated a prefixed verb system based on roots and prefixes of Germanic origin. Through contact with <a href="https://en.wikipedia.org/wiki/Middle_Low_German">Middle Low German</a>, especially <a href="https://en.wikipedia.org/wiki/Hanseatic_League#Commercial_expansion">during the Hanseatic period</a>, the Scandinavian languages borrowed many continental Germanic words, including Germanic prefixed verbs.</p>
+<p>English employs a few different verb affixing systems:</p>
+<ul>
+<li>Germanic prefixed verbs (somewhat vestigial)</li>
+<li><a href="https://en.wikipedia.org/wiki/Phrasal_verb">Phrasal verb</a> system (also predominantly Germanic)</li>
+<li>Latin prefixed verbs (borrowed extensively)</li>
+</ul>
+<p>Each is presented in this article; in addition, the Germanic prefixed verb system of German is presented for comparison.</p>
+<p>(To call an English phrasal verb an ‘affixed verb’ could be viewed as a stretch of terminology, as the ‘affix’ and the verb are separate words which might not even be adjacent in the sentence. This article chooses to accept the broadening of the term ‘affix’ to accommodate phrasal verbs.)</p>
+<p>For each of the four affixed verb systems presented in this article, a table of words was cultivated over a couple months, with <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a> used to verify etymologies and to search for additional use cases of a given verb or prefix. For the German table, <a href="https://www.duden.de/woerterbuch">Duden online</a> was occasionally used as well.</p>
+<p>The tables presented here are to be taken as <strong>rough approximations</strong>. With each entry having been hand-checked in Wiktionary, coverage was prioritized over accuracy and consistency; errors are quite possible. These tables are intended to give an <em>overall impression</em> of the notable characteristics of the prominent Western European affixed verb systems.</p>
+<h2>Latin (via English loanwords)</h2>
+<p>The Latin prefixed verb system features prominently in the core vocabularies of the Romance languages and of English. Over the <a href="https://en.wikipedia.org/wiki/Medieval_Latin">Medieval Latin</a> and <a href="https://en.wikipedia.org/wiki/New_Latin">New Latin</a> periods, new Latin words were synthesized from existing roots and affixes as the culture and science of Europe developed during the Middle Ages and the Renaissance.
+As Europeans increasingly wrote in their native languages rather than in Latin, Latin terms for scientific and technical innovations made their way into the spoken languages of Europe.</p>
+<p>Here is a table of English words that can be traced to frequently-utilized Latin root verbs and prefixes:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><em>con-</em></th>
+<th style="text-align:center"><em>in-</em></th>
+<th style="text-align:center"><em>re-</em></th>
+<th style="text-align:center"><em>ad-</em></th>
+<th style="text-align:center"><em>ex-</em></th>
+<th style="text-align:center"><em>de-</em></th>
+<th style="text-align:center"><em>sub-</em></th>
+<th style="text-align:center"><em>dis-</em></th>
+<th style="text-align:center"><em>pro-</em></th>
+<th style="text-align:center"><em>prae-</em></th>
+<th style="text-align:center"><em>ob-</em></th>
+<th style="text-align:center"><em>ab-</em></th>
+<th style="text-align:center"><em>trans-</em></th>
+<th style="text-align:center"><em>inter-</em></th>
+<th style="text-align:center"><em>per-</em></th>
+<th style="text-align:center"><em>se-</em></th>
+<th style="text-align:center"><em>ante-</em></th>
+<th style="text-align:center"><em>circum-</em></th>
+<th style="text-align:center"><em>intro-</em></th>
+<th style="text-align:center"><em>ne-</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>cēdō</strong></td>
+<td style="text-align:center">concede</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">recede</td>
+<td style="text-align:center">accede</td>
+<td style="text-align:center">exceed</td>
+<td style="text-align:center">deceased</td>
+<td style="text-align:center">succeed</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">proceed</td>
+<td style="text-align:center">precede</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abcess</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intercede</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">secede</td>
+<td style="text-align:center">antecedent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">necessary</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>iaciō</strong></td>
+<td style="text-align:center">conjecture</td>
+<td style="text-align:center">inject</td>
+<td style="text-align:center">reject</td>
+<td style="text-align:center">adjective</td>
+<td style="text-align:center">eject</td>
+<td style="text-align:center">dejected</td>
+<td style="text-align:center">subject</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">project</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">object</td>
+<td style="text-align:center">abject</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">interject</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>mittō</strong></td>
+<td style="text-align:center">commit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">remit</td>
+<td style="text-align:center">admit</td>
+<td style="text-align:center">emit</td>
+<td style="text-align:center">demise</td>
+<td style="text-align:center">submit</td>
+<td style="text-align:center">dismiss</td>
+<td style="text-align:center">promise</td>
+<td style="text-align:center">premise</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transmit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">permit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>speciō</strong></td>
+<td style="text-align:center">conspicuous</td>
+<td style="text-align:center">inspect</td>
+<td style="text-align:center">respect</td>
+<td style="text-align:center">aspect</td>
+<td style="text-align:center">expect</td>
+<td style="text-align:center">despicable</td>
+<td style="text-align:center">suspect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prospect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">perspective</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">circumspect</td>
+<td style="text-align:center">introspective</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>capiō</strong></td>
+<td style="text-align:center">conceive</td>
+<td style="text-align:center">inception</td>
+<td style="text-align:center">receive</td>
+<td style="text-align:center">accept</td>
+<td style="text-align:center">except</td>
+<td style="text-align:center">deceive</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">precept</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intercept</td>
+<td style="text-align:center">perceive</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">anticipate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>dūcō</strong></td>
+<td style="text-align:center">conduct</td>
+<td style="text-align:center">induce</td>
+<td style="text-align:center">reduce</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">deduce</td>
+<td style="text-align:center">subduction</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">produce</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abduct</td>
+<td style="text-align:center">transducer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">seduce</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">introduce</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>faciō</strong></td>
+<td style="text-align:center">confection</td>
+<td style="text-align:center">infect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">affect</td>
+<td style="text-align:center">effect</td>
+<td style="text-align:center">defeat</td>
+<td style="text-align:center">suffice</td>
+<td style="text-align:center">difficult</td>
+<td style="text-align:center">proficient</td>
+<td style="text-align:center">prefect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">perfect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>trahō</strong></td>
+<td style="text-align:center">contract</td>
+<td style="text-align:center">entreat</td>
+<td style="text-align:center">retreat</td>
+<td style="text-align:center">attract</td>
+<td style="text-align:center">extract</td>
+<td style="text-align:center">detract</td>
+<td style="text-align:center">subtract</td>
+<td style="text-align:center">distract</td>
+<td style="text-align:center">protracted</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abstract</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>ferō (i)</strong></td>
+<td style="text-align:center">confer</td>
+<td style="text-align:center">infer</td>
+<td style="text-align:center">refer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">defer</td>
+<td style="text-align:center">suffer</td>
+<td style="text-align:center">differ</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prefer</td>
+<td style="text-align:center">offer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transfer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>ferō (ii)</strong></td>
+<td style="text-align:center">collate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">relate</td>
+<td style="text-align:center">allative</td>
+<td style="text-align:center">elated</td>
+<td style="text-align:center">delay</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">dilate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">oblate</td>
+<td style="text-align:center">ablative</td>
+<td style="text-align:center">translate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>scrībō</strong></td>
+<td style="text-align:center">conscription</td>
+<td style="text-align:center">inscribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ascribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">describe</td>
+<td style="text-align:center">subscribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">proscribe</td>
+<td style="text-align:center">prescribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transcribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">circumscribe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>vertō</strong></td>
+<td style="text-align:center">convert</td>
+<td style="text-align:center">invert</td>
+<td style="text-align:center">revert</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">subvert</td>
+<td style="text-align:center">divert</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">obverse</td>
+<td style="text-align:center">avert</td>
+<td style="text-align:center">traverse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pervert</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>claudō</strong></td>
+<td style="text-align:center">conclude</td>
+<td style="text-align:center">include</td>
+<td style="text-align:center">recluse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">exclude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">disclose</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">preclude</td>
+<td style="text-align:center">occlude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">seclude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>currō</strong></td>
+<td style="text-align:center">concur</td>
+<td style="text-align:center">incur</td>
+<td style="text-align:center">recur</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">succor</td>
+<td style="text-align:center">discourse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">precursor</td>
+<td style="text-align:center">occur</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intercourse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fundō</strong></td>
+<td style="text-align:center">confuse</td>
+<td style="text-align:center">infuse</td>
+<td style="text-align:center">refuse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">effuse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">suffuse</td>
+<td style="text-align:center">diffuse</td>
+<td style="text-align:center">profuse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transfuse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>gradior</strong></td>
+<td style="text-align:center">congress</td>
+<td style="text-align:center">ingress</td>
+<td style="text-align:center">regress</td>
+<td style="text-align:center">aggressive</td>
+<td style="text-align:center">egress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">digress</td>
+<td style="text-align:center">progress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transgress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>portō</strong></td>
+<td style="text-align:center">comport</td>
+<td style="text-align:center">import</td>
+<td style="text-align:center">report</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">export</td>
+<td style="text-align:center">deport</td>
+<td style="text-align:center">support</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">opportune</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transport</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sistō</strong></td>
+<td style="text-align:center">consist</td>
+<td style="text-align:center">insist</td>
+<td style="text-align:center">resist</td>
+<td style="text-align:center">assist</td>
+<td style="text-align:center">exist</td>
+<td style="text-align:center">desist</td>
+<td style="text-align:center">subsist</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">persist</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>agō</strong></td>
+<td style="text-align:center">cogent</td>
+<td style="text-align:center">inactive</td>
+<td style="text-align:center">react</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">exact</td>
+<td style="text-align:center">deactivate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prodigal</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transigent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pellō</strong></td>
+<td style="text-align:center">compel</td>
+<td style="text-align:center">impel</td>
+<td style="text-align:center">repel</td>
+<td style="text-align:center">appeal</td>
+<td style="text-align:center">expel</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">dispel</td>
+<td style="text-align:center">propel</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>plicō</strong></td>
+<td style="text-align:center">complicate</td>
+<td style="text-align:center">imply</td>
+<td style="text-align:center">reply</td>
+<td style="text-align:center">apply</td>
+<td style="text-align:center">explicit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">supplicate</td>
+<td style="text-align:center">display</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>premō</strong></td>
+<td style="text-align:center">compress</td>
+<td style="text-align:center">impress</td>
+<td style="text-align:center">repress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">express</td>
+<td style="text-align:center">depress</td>
+<td style="text-align:center">suppress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">oppress</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sequor</strong></td>
+<td style="text-align:center">consequent</td>
+<td style="text-align:center">ensue</td>
+<td style="text-align:center">resequence</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">subsequent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pursue</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">obsequious</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">persecute</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>tendō</strong></td>
+<td style="text-align:center">contend</td>
+<td style="text-align:center">intend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">attend</td>
+<td style="text-align:center">extend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">distend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pretend</td>
+<td style="text-align:center">ostensible</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>teneō</strong></td>
+<td style="text-align:center">contain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">retain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">detain</td>
+<td style="text-align:center">sustain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">obtain</td>
+<td style="text-align:center">abstain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pertain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>veniō</strong></td>
+<td style="text-align:center">convene</td>
+<td style="text-align:center">invent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">advent</td>
+<td style="text-align:center">event</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">souvenir</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prevent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intervene</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>iungō</strong></td>
+<td style="text-align:center">conjoin</td>
+<td style="text-align:center">injunction</td>
+<td style="text-align:center">rejoin</td>
+<td style="text-align:center">adjoin</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">subjunctive</td>
+<td style="text-align:center">disjoin</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>legō</strong></td>
+<td style="text-align:center">collect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">allege</td>
+<td style="text-align:center">elect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intelligent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">select</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">neglect</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>lūdō</strong></td>
+<td style="text-align:center">collude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">allude</td>
+<td style="text-align:center">elude</td>
+<td style="text-align:center">delude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prelude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">interlude</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>parō</strong></td>
+<td style="text-align:center">compare</td>
+<td style="text-align:center">imperative</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">disparate</td>
+<td style="text-align:center">proper</td>
+<td style="text-align:center">prepare</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">separate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pōnō</strong></td>
+<td style="text-align:center">compose</td>
+<td style="text-align:center">impose</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">expose</td>
+<td style="text-align:center">depose</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">opponent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transpose</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>rogō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">arrogant</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">surrogate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prorogue</td>
+<td style="text-align:center">prerogative</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abrogate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">interrogate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>spīrō</strong></td>
+<td style="text-align:center">conspire</td>
+<td style="text-align:center">inspire</td>
+<td style="text-align:center">respiration</td>
+<td style="text-align:center">aspire</td>
+<td style="text-align:center">expire</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">perspire</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>statuō</strong></td>
+<td style="text-align:center">constitute</td>
+<td style="text-align:center">institute</td>
+<td style="text-align:center">restitution</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">destitute</td>
+<td style="text-align:center">substitute</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prostitute</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>cadō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">incision</td>
+<td style="text-align:center">recidivist</td>
+<td style="text-align:center">accident</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">decide</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">occasion</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>dīcō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">indicate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">addict</td>
+<td style="text-align:center">edict</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">predicate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abdicate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>moveō</strong></td>
+<td style="text-align:center">commotion</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">remove</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">emotion</td>
+<td style="text-align:center">demote</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">promote</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>nūntiō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">renounce</td>
+<td style="text-align:center">announce</td>
+<td style="text-align:center">enunciate</td>
+<td style="text-align:center">denounce</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pronounce</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>quaerō</strong></td>
+<td style="text-align:center">conquer</td>
+<td style="text-align:center">inquire</td>
+<td style="text-align:center">require</td>
+<td style="text-align:center">acquire</td>
+<td style="text-align:center">exquisite</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>rumpō</strong></td>
+<td style="text-align:center">corrupt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erupt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">disrupt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abrupt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">interrupt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sedeō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">insidious</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">assess</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">dissident</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">preside</td>
+<td style="text-align:center">obsess</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sūmō</strong></td>
+<td style="text-align:center">consume</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">resume</td>
+<td style="text-align:center">assume</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">subsume</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">presume</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>vocō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">invoke</td>
+<td style="text-align:center">revoke</td>
+<td style="text-align:center">advocate</td>
+<td style="text-align:center">evoke</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">provoke</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>cernō</strong></td>
+<td style="text-align:center">concern</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">excrete</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">discern</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">secrete</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>crēscō</strong></td>
+<td style="text-align:center">concrete</td>
+<td style="text-align:center">increase</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">accrue</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">decrease</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>flīgō</strong></td>
+<td style="text-align:center">conflict</td>
+<td style="text-align:center">inflict</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">affliction</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">profligate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>gerō</strong></td>
+<td style="text-align:center">congest</td>
+<td style="text-align:center">ingest</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">suggest</td>
+<td style="text-align:center">digest</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>habeō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">inhibit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">exhibit</td>
+<td style="text-align:center">due</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">prohibit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pendō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">impend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">append</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">depend</td>
+<td style="text-align:center">suspend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sentiō</strong></td>
+<td style="text-align:center">consent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">resent</td>
+<td style="text-align:center">assent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">dissent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>servō</strong></td>
+<td style="text-align:center">conserve</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">reserve</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">preserve</td>
+<td style="text-align:center">observe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>stō</strong></td>
+<td style="text-align:center">cost</td>
+<td style="text-align:center">instant</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">distant</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">oust</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>struō</strong></td>
+<td style="text-align:center">construct</td>
+<td style="text-align:center">instruct</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">destruct</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">obstruct</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>videō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">review</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">evident</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">provide</td>
+<td style="text-align:center">preview</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>crīminō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">incriminate</td>
+<td style="text-align:center">recriminate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">discriminate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>flectō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">inflect</td>
+<td style="text-align:center">reflect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">deflect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>flō</strong></td>
+<td style="text-align:center">conflate</td>
+<td style="text-align:center">inflate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">deflate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fluō</strong></td>
+<td style="text-align:center">confluence</td>
+<td style="text-align:center">influence</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">affluent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>gregō</strong></td>
+<td style="text-align:center">congregate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aggregate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">segregate</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>ligō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">rely</td>
+<td style="text-align:center">ally</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">oblige</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>mandō</strong></td>
+<td style="text-align:center">command</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">remand</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">demand</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>petō</strong></td>
+<td style="text-align:center">compete</td>
+<td style="text-align:center">impetus</td>
+<td style="text-align:center">repeat</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>plorō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">implore</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">explore</td>
+<td style="text-align:center">deplore</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>prehendō</strong></td>
+<td style="text-align:center">comprise</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">reprise</td>
+<td style="text-align:center">apprise</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>regō</strong></td>
+<td style="text-align:center">correct</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">direct</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>scandō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ascend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">descend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">transcend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>solvō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">resolve</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">dissolve</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">absolve</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sum</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">present</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">absent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">interest</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>tegō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">integument</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">detect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">protect</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>torqueō</strong></td>
+<td style="text-align:center">contort</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">retort</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">distort</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>vādō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">invade</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">evade</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pervade</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pleō</strong></td>
+<td style="text-align:center">comply</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">supply</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>serō</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">insert</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">assert</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>tangō</strong></td>
+<td style="text-align:center">contact</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">attain</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>The columns of this table are Latin prefixes. The rows of this table are Latin root verbs, with each verb identified by its first <a href="https://en.wikipedia.org/wiki/Principal_parts#Latin">principal part</a>.</p>
+<ul>
+<li>By convention, typically the first principal part is the conjugated form for indicative <a href="https://en.wikipedia.org/wiki/Grammatical_mood">mood</a>, active <a href="https://en.wikipedia.org/wiki/Voice_%28grammar%29">voice</a>, present <a href="https://en.wikipedia.org/wiki/Grammatical_tense#Latin_and_Ancient_Greek">tense</a>, singular <a href="https://en.wikipedia.org/wiki/Grammatical_number">number</a>, and first <a href="https://en.wikipedia.org/wiki/Grammatical_person">person</a>. However, there are special cases. The verb <strong>gradior</strong>, for instance, is <a href="https://en.wikipedia.org/wiki/Deponent_verb#Latin">deponent</a> and not conjugated into active-voice forms; <strong>gradior</strong> is the indicative <em>passive</em> present first-person singular form.</li>
+<li>The verb <strong>fero</strong> is given two rows because it is a <a href="https://en.wikipedia.org/wiki/Suppletion">suppletive verb</a> – a portion of its conjugated forms originate from an entirely different verb (as with English <strong>go</strong>, <strong>went</strong>). The <strong>fero</strong>-cognate forms appear in row ‘<strong>fero (i)</strong>’, while forms cognate to the suppletive principal part <strong>latum</strong> appear in row ‘<strong>fero (ii)</strong>’.</li>
+</ul>
+<p>The rows and columns are sorted by a rough measure of frequency/popularity: the number of words appearing in each column/row, with ties broken alphabetically.</p>
+<p>For some entries the etymologies are ambiguous or open to some interpretation. For instance, one can transform a Latin verb into <a href="https://en.wikipedia.org/wiki/Frequentative#Latin">frequentative</a> form by adding endings to the <a href="https://en.wikipedia.org/wiki/Latin_conjugation#Supine">supine stem</a> that yield a new verb. An example is as follows:</p>
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/specio"><strong>speciō · specere · spexī · spectum</strong></a> <em>(original)</em></li>
+<li><a href="https://en.wiktionary.org/wiki/specto#Latin"><strong>spectō · spectāre · spectāvī · spectātum</strong></a> <em>(frequentative)</em></li>
+</ul>
+<p>The frequentative generally serves to marks an action as being repetitive; however, through Latin’s history, <a href="https://en.wikipedia.org/wiki/Romance_languages#Lexical_innovation">and notably in the development of the Romance languages</a>, certain frequentatives would become widely used alongside and even in place of their originating verbs.</p>
+<p>As noted in the Introduction, this table was made with coverage valued over accuracy and/or consistency. Words that are verbs in English are favored when possible, but in some cases English nouns and adjectives have been included.</p>
+<p>This raises a question: why does this article focus solely on verbs? Indeed, adjectives or even nouns could be analyzed in this fashion as well. However, Latin has a quirk that makes analyzing verbs and adjectives together tricky: the prefix <strong>in-</strong>.</p>
+<ul>
+<li>Sometimes Latin <strong>in-</strong> <a href="https://en.wiktionary.org/wiki/in-#Etymology_2_5">means ‘in’ or ‘inside’</a>. This sense tends to be used with verbs, and is theorized to come from Proto-Indo-European <a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/h%E2%82%81%C3%A9n"><em>*h<sub>1</sub>én</em></a>.</li>
+<li>Sometimes Latin <strong>in-</strong> <a href="https://en.wiktionary.org/wiki/in-#Etymology_1_5">is a negator</a>. This sense tends to be used with adjectives, and is theorized to come from Proto-Indo-European <a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/n%CC%A5-"><em>*n̥-</em></a>.</li>
+</ul>
+<h2>German</h2>
+<p>This section presents the Germanic prefixed verb system of <a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a>.</p>
+<p>Here is a table of German prefixed verbs assembled from frequently-utilized root verbs and prefixes of Germanic origin:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><em>ver-</em></th>
+<th style="text-align:center"><em>be-</em></th>
+<th style="text-align:center"><em>ab-</em></th>
+<th style="text-align:center"><em>an-</em></th>
+<th style="text-align:center"><em>aus-</em></th>
+<th style="text-align:center"><em>auf-</em></th>
+<th style="text-align:center"><em>ein-</em></th>
+<th style="text-align:center"><em>er-</em></th>
+<th style="text-align:center"><em>durch-</em></th>
+<th style="text-align:center"><em>ent-</em></th>
+<th style="text-align:center"><em>vor-</em></th>
+<th style="text-align:center"><em>unter-</em></th>
+<th style="text-align:center"><em>um-</em></th>
+<th style="text-align:center"><em>zurück-</em></th>
+<th style="text-align:center"><em>weg-</em></th>
+<th style="text-align:center"><em>mit-</em></th>
+<th style="text-align:center"><em>los-</em></th>
+<th style="text-align:center"><em>zusammen-</em></th>
+<th style="text-align:center"><em>ge-</em></th>
+<th style="text-align:center"><em>zer-</em></th>
+<th style="text-align:center"><em>miss-</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>gehen</strong></td>
+<td style="text-align:center">vergehen</td>
+<td style="text-align:center">begehen</td>
+<td style="text-align:center">abgehen</td>
+<td style="text-align:center">angehen</td>
+<td style="text-align:center">ausgehen</td>
+<td style="text-align:center">aufgehen</td>
+<td style="text-align:center">eingehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchgehen</td>
+<td style="text-align:center">entgehen</td>
+<td style="text-align:center">vorgehen</td>
+<td style="text-align:center">untergehen</td>
+<td style="text-align:center">umgehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">weggehen</td>
+<td style="text-align:center">mitgehen</td>
+<td style="text-align:center">losgehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zergehen</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>ziehen</strong></td>
+<td style="text-align:center">verziehen</td>
+<td style="text-align:center">beziehen</td>
+<td style="text-align:center">abziehen</td>
+<td style="text-align:center">anziehen</td>
+<td style="text-align:center">ausziehen</td>
+<td style="text-align:center">aufziehen</td>
+<td style="text-align:center">einziehen</td>
+<td style="text-align:center">erziehen</td>
+<td style="text-align:center">durchziehen</td>
+<td style="text-align:center">entziehen</td>
+<td style="text-align:center">vorziehen</td>
+<td style="text-align:center">unterziehen</td>
+<td style="text-align:center">umziehen</td>
+<td style="text-align:center">zurückziehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">mitziehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenziehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>kommen</strong></td>
+<td style="text-align:center">verkommen</td>
+<td style="text-align:center">bekommen</td>
+<td style="text-align:center">abkommen</td>
+<td style="text-align:center">ankommen</td>
+<td style="text-align:center">auskommen</td>
+<td style="text-align:center">aufkommen</td>
+<td style="text-align:center">einkommen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchkommen</td>
+<td style="text-align:center">entkommen</td>
+<td style="text-align:center">vorkommen</td>
+<td style="text-align:center">unterkommen</td>
+<td style="text-align:center">umkommen</td>
+<td style="text-align:center">zurückkommen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">mitkommen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenkommen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>legen</strong></td>
+<td style="text-align:center">verlegen</td>
+<td style="text-align:center">belegen</td>
+<td style="text-align:center">ablegen</td>
+<td style="text-align:center">anlegen</td>
+<td style="text-align:center">auslegen</td>
+<td style="text-align:center">auflegen</td>
+<td style="text-align:center">einlegen</td>
+<td style="text-align:center">erlegen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorlegen</td>
+<td style="text-align:center">unterlegen</td>
+<td style="text-align:center">umlegen</td>
+<td style="text-align:center">zurücklegen</td>
+<td style="text-align:center">weglegen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">loslegen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zerlegen</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fallen</strong></td>
+<td style="text-align:center">verfallen</td>
+<td style="text-align:center">befallen</td>
+<td style="text-align:center">abfallen</td>
+<td style="text-align:center">anfallen</td>
+<td style="text-align:center">ausfallen</td>
+<td style="text-align:center">auffallen</td>
+<td style="text-align:center">einfallen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchfallen</td>
+<td style="text-align:center">entfallen</td>
+<td style="text-align:center">vorfallen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenfallen</td>
+<td style="text-align:center">gefallen</td>
+<td style="text-align:center">zerfallen</td>
+<td style="text-align:center">missfallen</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>geben</strong></td>
+<td style="text-align:center">vergeben</td>
+<td style="text-align:center">begeben</td>
+<td style="text-align:center">abgeben</td>
+<td style="text-align:center">angeben</td>
+<td style="text-align:center">ausgeben</td>
+<td style="text-align:center">aufgeben</td>
+<td style="text-align:center">eingeben</td>
+<td style="text-align:center">ergeben</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorgeben</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umgeben</td>
+<td style="text-align:center">zurückgeben</td>
+<td style="text-align:center">weggeben</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">losgeben</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>stellen</strong></td>
+<td style="text-align:center">verstellen</td>
+<td style="text-align:center">bestellen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">anstellen</td>
+<td style="text-align:center">ausstellen</td>
+<td style="text-align:center">aufstellen</td>
+<td style="text-align:center">einstellen</td>
+<td style="text-align:center">erstellen</td>
+<td style="text-align:center">durchstellen</td>
+<td style="text-align:center">entstellen</td>
+<td style="text-align:center">vorstellen</td>
+<td style="text-align:center">unterstellen</td>
+<td style="text-align:center">umstellen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenstellen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>brechen</strong></td>
+<td style="text-align:center">verbrechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abbrechen</td>
+<td style="text-align:center">anbrechen</td>
+<td style="text-align:center">ausbrechen</td>
+<td style="text-align:center">aufbrechen</td>
+<td style="text-align:center">einbrechen</td>
+<td style="text-align:center">erbrechen</td>
+<td style="text-align:center">durchbrechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unterbrechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenbrechen</td>
+<td style="text-align:center">gebrechen</td>
+<td style="text-align:center">zerbrechen</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>denken</strong></td>
+<td style="text-align:center">verdenken</td>
+<td style="text-align:center">bedenken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">andenken</td>
+<td style="text-align:center">ausdenken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">eindenken</td>
+<td style="text-align:center">erdenken</td>
+<td style="text-align:center">durchdenken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umdenken</td>
+<td style="text-align:center">zurückdenken</td>
+<td style="text-align:center">wegdenken</td>
+<td style="text-align:center">mitdenken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">gedenken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>laufen</strong></td>
+<td style="text-align:center">verlaufen</td>
+<td style="text-align:center">belaufen</td>
+<td style="text-align:center">ablaufen</td>
+<td style="text-align:center">anlaufen</td>
+<td style="text-align:center">auslaufen</td>
+<td style="text-align:center">auflaufen</td>
+<td style="text-align:center">einlaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchlaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umlaufen</td>
+<td style="text-align:center">unterlaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">weglaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zerlaufen</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>nehmen</strong></td>
+<td style="text-align:center">vernehmen</td>
+<td style="text-align:center">benehmen</td>
+<td style="text-align:center">abnehmen</td>
+<td style="text-align:center">annehmen</td>
+<td style="text-align:center">ausnehmen</td>
+<td style="text-align:center">aufnehmen</td>
+<td style="text-align:center">einnehmen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchnehmen</td>
+<td style="text-align:center">entnehmen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unternehmen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">wegnehmen</td>
+<td style="text-align:center">mitnehmen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>schlagen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">beschlagen</td>
+<td style="text-align:center">abschlagen</td>
+<td style="text-align:center">anschlagen</td>
+<td style="text-align:center">ausschlagen</td>
+<td style="text-align:center">aufschlagen</td>
+<td style="text-align:center">einschlagen</td>
+<td style="text-align:center">erschlagen</td>
+<td style="text-align:center">durchschlagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorschlagen</td>
+<td style="text-align:center">unterschlagen</td>
+<td style="text-align:center">umschlagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zerschlagen</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>lassen</strong></td>
+<td style="text-align:center">verlassen</td>
+<td style="text-align:center">belassen</td>
+<td style="text-align:center">ablassen</td>
+<td style="text-align:center">anlassen</td>
+<td style="text-align:center">auslassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einlassen</td>
+<td style="text-align:center">erlassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entlassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unterlassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">weglassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">loslassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>bringen</strong></td>
+<td style="text-align:center">verbringen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">anbringen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufbringen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erbringen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorbringen</td>
+<td style="text-align:center">unterbringen</td>
+<td style="text-align:center">umbringen</td>
+<td style="text-align:center">zurückbringen</td>
+<td style="text-align:center">wegbringen</td>
+<td style="text-align:center">mitbringen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fahren</strong></td>
+<td style="text-align:center">s. verfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einfahren</td>
+<td style="text-align:center">erfahren</td>
+<td style="text-align:center">durchfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">wegfahren</td>
+<td style="text-align:center">mitfahren</td>
+<td style="text-align:center">losfahren</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sagen</strong></td>
+<td style="text-align:center">versagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">absagen</td>
+<td style="text-align:center">ansagen</td>
+<td style="text-align:center">aussagen</td>
+<td style="text-align:center">aufsagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchsagen</td>
+<td style="text-align:center">entsagen</td>
+<td style="text-align:center">vorsagen</td>
+<td style="text-align:center">untersagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">lossagen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>halten</strong></td>
+<td style="text-align:center">verhalten</td>
+<td style="text-align:center">behalten</td>
+<td style="text-align:center">abhalten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aushalten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erhalten</td>
+<td style="text-align:center">durchhalten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorhalten</td>
+<td style="text-align:center">unterhalten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückhalten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>machen</strong></td>
+<td style="text-align:center">vermachen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">anmachen</td>
+<td style="text-align:center">ausmachen</td>
+<td style="text-align:center">aufmachen</td>
+<td style="text-align:center">einmachen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchmachen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">wegmachen</td>
+<td style="text-align:center">mitmachen</td>
+<td style="text-align:center">losmachen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fassen</strong></td>
+<td style="text-align:center">verfassen</td>
+<td style="text-align:center">befassen</td>
+<td style="text-align:center">abfassen</td>
+<td style="text-align:center">anfassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auffassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erfassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umfassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenfassen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sehen</strong></td>
+<td style="text-align:center">versehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">absehen</td>
+<td style="text-align:center">ansehen</td>
+<td style="text-align:center">aussehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einsehen</td>
+<td style="text-align:center">ersehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vorsehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umsehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>stehen</strong></td>
+<td style="text-align:center">verstehen</td>
+<td style="text-align:center">bestehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufstehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erstehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entstehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unterstehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückstehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">gestehen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hören</strong></td>
+<td style="text-align:center">verhören</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abhören</td>
+<td style="text-align:center">anhören</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufhören</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">weghören</td>
+<td style="text-align:center">mithören</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">gehören</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>rücken</strong></td>
+<td style="text-align:center">verrückt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abrücken</td>
+<td style="text-align:center">anrücken</td>
+<td style="text-align:center">ausrücken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einrücken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entrücken</td>
+<td style="text-align:center">vorrücken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>decken</strong></td>
+<td style="text-align:center">verdecken</td>
+<td style="text-align:center">bedecken</td>
+<td style="text-align:center">abdecken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufdecken</td>
+<td style="text-align:center">eindecken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entdecken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>finden</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">s. befinden</td>
+<td style="text-align:center">abfinden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auffinden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erfinden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">empfinden</td>
+<td style="text-align:center">vorfinden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>holen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abholen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ausholen</td>
+<td style="text-align:center">aufholen</td>
+<td style="text-align:center">einholen</td>
+<td style="text-align:center">erholen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückholen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sprechen</strong></td>
+<td style="text-align:center">versprechen</td>
+<td style="text-align:center">besprechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ansprechen</td>
+<td style="text-align:center">aussprechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entsprechen</td>
+<td style="text-align:center">vorsprechen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>suchen</strong></td>
+<td style="text-align:center">versuchen</td>
+<td style="text-align:center">besuchen</td>
+<td style="text-align:center">absuchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufsuchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchsuchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">untersuchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>zählen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abzählen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auszählen</td>
+<td style="text-align:center">aufzählen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erzählen</td>
+<td style="text-align:center">durchzählen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zusammenzählen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fangen</strong></td>
+<td style="text-align:center">verfangen</td>
+<td style="text-align:center">befangen</td>
+<td style="text-align:center">abfangen</td>
+<td style="text-align:center">anfangen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">empfangen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>kaufen</strong></td>
+<td style="text-align:center">verkaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abkaufen</td>
+<td style="text-align:center">ankaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einkaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückkaufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>rufen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">berufen</td>
+<td style="text-align:center">abrufen</td>
+<td style="text-align:center">anrufen</td>
+<td style="text-align:center">ausrufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückrufen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>schlafen</strong></td>
+<td style="text-align:center">verschlafen</td>
+<td style="text-align:center">beschlafen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ausschlafen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einschlafen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">durchschlafen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>werten</strong></td>
+<td style="text-align:center">verwerten</td>
+<td style="text-align:center">bewerten</td>
+<td style="text-align:center">abwerten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufwerten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entwerten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>achten</strong></td>
+<td style="text-align:center">verachten</td>
+<td style="text-align:center">beachten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erachten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">missachten</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>brauchen</strong></td>
+<td style="text-align:center">verbrauchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufbrauchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">gebrauchen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">missbrauchen</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>kennen</strong></td>
+<td style="text-align:center">verkennen</td>
+<td style="text-align:center">bekennen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auskennen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erkennen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>klären</strong></td>
+<td style="text-align:center">verklären</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abklären</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufklären</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erklären</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>kleiden</strong></td>
+<td style="text-align:center">verkleiden</td>
+<td style="text-align:center">bekleiden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ankleiden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entkleiden</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>zahlen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bezahlen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">auszahlen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">einzahlen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zurückzahlen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>deuten</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bedeuten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">andeuten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">umdeuten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>folgen</strong></td>
+<td style="text-align:center">verfolgen</td>
+<td style="text-align:center">befolgen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erfolgen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>merken</strong></td>
+<td style="text-align:center">vermerken</td>
+<td style="text-align:center">bemerken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">anmerken</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>nutzen</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">benutzen</td>
+<td style="text-align:center">abnutzen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ausnutzen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>warten</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">abwarten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">aufwarten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">erwarten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>arten</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ausarten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">entarten</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>dienen</strong></td>
+<td style="text-align:center">verdienen</td>
+<td style="text-align:center">bedienen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>The rows are German root verbs, with each verb identified by its <a href="https://en.wikipedia.org/wiki/German_verbs#Bare_infinitives">bare infinitive</a> form. The columns are German prefixes. The rows and columns are sorted by a rough measure of frequency/popularity: the number of words appearing in each column/row, with ties broken alphabetically.</p>
+<p>Some of these German verbs are <a href="https://en.wikipedia.org/wiki/Separable_verb"><em>separable</em></a>; when a verb is separable, in some clause/phrase configurations the prefix is detached from the verb and placed at a separate position. In German the determination of whether a verb is separable tends to be vested in the prefix:</p>
+<ul>
+<li><em>separable prefixes: <strong>ab-, an-, aus-, auf-, ein-, vor-, zurück-, weg-, mit-, los-, zusammen-</strong></em></li>
+<li><em>inseparable prefixes: <strong>ver-, be-, er-, ent-, ge-, zer-, miss-</strong></em></li>
+<li><em>mixed prefixes: <strong>durch-, unter-, um-</strong></em></li>
+</ul>
+<p>It’s tempting to draw parallels between German separable verbs and English phrasal verbs; while there are similarities, the two are not straightforwardly aligned. This will be explored in the next section.</p>
+<h2>English</h2>
+<p>Old English, whose lexicon was predominantly Germanic, had been favoring <a href="https://en.wikibooks.org/wiki/Old_English/Word_Formation#Verbs_formed_with_prefixes">the use of Germanic prefixing</a> for its verbs. Once English had turned to borrowing considerably from French and Latin, however, Latinate prefixed verbs became prominent.</p>
+<p>In modern English there are still a few Germanic prefixed verbs; many of these concern finance and banking, and a few are recent coinages from computing.</p>
+<p>Here is a table of English words (mostly verbs, but in a few cases other word classes are presented as well) assembled from root verbs and prefixes of Germanic origin:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><em>over-</em></th>
+<th style="text-align:center"><em>out-</em></th>
+<th style="text-align:center"><em>un-</em></th>
+<th style="text-align:center"><em>under-</em></th>
+<th style="text-align:center"><em>up-</em></th>
+<th style="text-align:center"><em>be-</em></th>
+<th style="text-align:center"><em>fore-</em></th>
+<th style="text-align:center"><em>for-</em></th>
+<th style="text-align:center"><em>in-</em></th>
+<th style="text-align:center"><em>mis-</em></th>
+<th style="text-align:center"><em>with-</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>take</strong></td>
+<td style="text-align:center">overtake</td>
+<td style="text-align:center">outtake</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">undertake</td>
+<td style="text-align:center">uptake</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">intake</td>
+<td style="text-align:center">mistake</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>bid</strong></td>
+<td style="text-align:center">overbid</td>
+<td style="text-align:center">outbid</td>
+<td style="text-align:center">unbidden</td>
+<td style="text-align:center">underbid</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forbid</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fit</strong></td>
+<td style="text-align:center">overfitting</td>
+<td style="text-align:center">outfit</td>
+<td style="text-align:center">unfit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">befit</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">misfit</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sell</strong></td>
+<td style="text-align:center">oversell</td>
+<td style="text-align:center">outsell</td>
+<td style="text-align:center">unsold</td>
+<td style="text-align:center">undersell</td>
+<td style="text-align:center">upsell</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>cast</strong></td>
+<td style="text-align:center">overcast</td>
+<td style="text-align:center">outcast</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forecast</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">miscast</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>come</strong></td>
+<td style="text-align:center">overcome</td>
+<td style="text-align:center">outcome</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">become</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">income</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>stand</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">outstanding</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">understand</td>
+<td style="text-align:center">upstanding</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">withstand</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>set</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">outset</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">upset</td>
+<td style="text-align:center">beset</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">inset</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>do</strong></td>
+<td style="text-align:center">overdo</td>
+<td style="text-align:center">outdo</td>
+<td style="text-align:center">undo</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>go</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">outgoing</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">undergo</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forgo</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hold</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">uphold</td>
+<td style="text-align:center">behold</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">withhold</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>load</strong></td>
+<td style="text-align:center">overload</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unload</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">upload</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>see</strong></td>
+<td style="text-align:center">oversee</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unseen</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">foresee</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>shift</strong></td>
+<td style="text-align:center">overshift</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">undershift</td>
+<td style="text-align:center">upshift</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>shoot</strong></td>
+<td style="text-align:center">overshoot</td>
+<td style="text-align:center">outshoot</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">undershoot</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>draw</strong></td>
+<td style="text-align:center">overdraw</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">withdraw</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>eat</strong></td>
+<td style="text-align:center">overeat</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">undereat</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>end</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unending</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">upend</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>get</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">beget</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forget</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>give</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forgive</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">misgivings</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>know</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unknown</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">foreknow</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>put</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">output</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">input</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>steer</strong></td>
+<td style="text-align:center">oversteer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">understeer</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>tell</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">untold</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">foretell</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>work</strong></td>
+<td style="text-align:center">overwork</td>
+<td style="text-align:center">outwork</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>write</strong></td>
+<td style="text-align:center">overwrite</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">underwrite</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fall</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">befall</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hand</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unhand</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>lie</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">belie</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>lift</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">uplift</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>lock</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">unlock</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>root</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">uproot</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>warn</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">forewarn</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>The rows and columns are sorted by a rough measure of frequency/popularity: the number of words appearing in each column/row, with ties broken alphabetically.</p>
+<p>(<em>Note:</em> in the row <strong>bid</strong>, the word <strong>unbidden</strong> derives <a href="https://en.wiktionary.org/wiki/bid#Etymology_1">from one meaning</a> of <strong>bid</strong>, while the other words in the row derive <a href="https://en.wiktionary.org/wiki/bid#Etymology_2">from the other</a>.)</p>
+<p>Even the large table is noticeably small compared to the tables presented above; one might wonder whether Germanic verb prefixing is effectively vestigial in English. However, English has an alternate approach to prefixing that remains productive for roots and affixes of Germanic origin: <a href="https://en.wikipedia.org/wiki/Phrasal_verb"><em>phrasal verbs</em></a>.</p>
+<p>Here is a table of English phrasal verbs assembled from root verbs and accompanying particles that are both of Germanic origin:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><em>out</em></th>
+<th style="text-align:center"><em>up</em></th>
+<th style="text-align:center"><em>off</em></th>
+<th style="text-align:center"><em>back</em></th>
+<th style="text-align:center"><em>down</em></th>
+<th style="text-align:center"><em>in</em></th>
+<th style="text-align:center"><em>over</em></th>
+<th style="text-align:center"><em>around</em></th>
+<th style="text-align:center"><em>away</em></th>
+<th style="text-align:center"><em>on</em></th>
+<th style="text-align:center"><em>by</em></th>
+<th style="text-align:center"><em>after</em></th>
+<th style="text-align:center"><em>across</em></th>
+<th style="text-align:center"><em>together</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>come</strong></td>
+<td style="text-align:center">come out</td>
+<td style="text-align:center">come up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">come back</td>
+<td style="text-align:center">come down</td>
+<td style="text-align:center">come in</td>
+<td style="text-align:center">come over</td>
+<td style="text-align:center">come around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">come on</td>
+<td style="text-align:center">come by</td>
+<td style="text-align:center">come after</td>
+<td style="text-align:center">come across</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>get</strong></td>
+<td style="text-align:center">get out</td>
+<td style="text-align:center">get up</td>
+<td style="text-align:center">get off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">get in</td>
+<td style="text-align:center">get over</td>
+<td style="text-align:center">get around</td>
+<td style="text-align:center">get away</td>
+<td style="text-align:center">get on</td>
+<td style="text-align:center">get by</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">get across</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>take</strong></td>
+<td style="text-align:center">take out</td>
+<td style="text-align:center">take up</td>
+<td style="text-align:center">take off</td>
+<td style="text-align:center">take back</td>
+<td style="text-align:center">take down</td>
+<td style="text-align:center">take in</td>
+<td style="text-align:center">take over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">take away</td>
+<td style="text-align:center">take on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">take after</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>turn</strong></td>
+<td style="text-align:center">turn out</td>
+<td style="text-align:center">turn up</td>
+<td style="text-align:center">turn off</td>
+<td style="text-align:center">turn back</td>
+<td style="text-align:center">turn down</td>
+<td style="text-align:center">turn in</td>
+<td style="text-align:center">turn over</td>
+<td style="text-align:center">turn around</td>
+<td style="text-align:center">turn away</td>
+<td style="text-align:center">turn on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>call</strong></td>
+<td style="text-align:center">call out</td>
+<td style="text-align:center">call up</td>
+<td style="text-align:center">call off</td>
+<td style="text-align:center">call back</td>
+<td style="text-align:center">call down</td>
+<td style="text-align:center">call in</td>
+<td style="text-align:center">call over</td>
+<td style="text-align:center">call around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">call on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>bring</strong></td>
+<td style="text-align:center">bring out</td>
+<td style="text-align:center">bring up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bring back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bring in</td>
+<td style="text-align:center">bring over</td>
+<td style="text-align:center">bring around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bring on</td>
+<td style="text-align:center">bring by</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bring together</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>look</strong></td>
+<td style="text-align:center">look out</td>
+<td style="text-align:center">look up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">look back</td>
+<td style="text-align:center">look down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">look over</td>
+<td style="text-align:center">look around</td>
+<td style="text-align:center">look away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">look after</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>put</strong></td>
+<td style="text-align:center">put out</td>
+<td style="text-align:center">put up</td>
+<td style="text-align:center">put off</td>
+<td style="text-align:center">put back</td>
+<td style="text-align:center">put down</td>
+<td style="text-align:center">put in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">put away</td>
+<td style="text-align:center">put on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>run</strong></td>
+<td style="text-align:center">run out</td>
+<td style="text-align:center">run up</td>
+<td style="text-align:center">run off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">run around</td>
+<td style="text-align:center">run away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">run by</td>
+<td style="text-align:center">run after</td>
+<td style="text-align:center">run across</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>go</strong></td>
+<td style="text-align:center">go out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">go off</td>
+<td style="text-align:center">go back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">go over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">go away</td>
+<td style="text-align:center">go on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">go after</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">go together</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>stand</strong></td>
+<td style="text-align:center">stand out</td>
+<td style="text-align:center">stand up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">stand back</td>
+<td style="text-align:center">stand down</td>
+<td style="text-align:center">stand in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">stand around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">stand by</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>throw</strong></td>
+<td style="text-align:center">throw out</td>
+<td style="text-align:center">throw up</td>
+<td style="text-align:center">throw off</td>
+<td style="text-align:center">throw back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">throw over</td>
+<td style="text-align:center">throw around</td>
+<td style="text-align:center">throw away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>cut</strong></td>
+<td style="text-align:center">cut out</td>
+<td style="text-align:center">cut up</td>
+<td style="text-align:center">cut off</td>
+<td style="text-align:center">cut back</td>
+<td style="text-align:center">cut down</td>
+<td style="text-align:center">cut in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fall</strong></td>
+<td style="text-align:center">fall out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">fall off</td>
+<td style="text-align:center">fall back</td>
+<td style="text-align:center">fall down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">fall over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">fall away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>give</strong></td>
+<td style="text-align:center">give out</td>
+<td style="text-align:center">give up</td>
+<td style="text-align:center">give off</td>
+<td style="text-align:center">give back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">give in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">give away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hand</strong></td>
+<td style="text-align:center">hand out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">hand off</td>
+<td style="text-align:center">hand back</td>
+<td style="text-align:center">hand down</td>
+<td style="text-align:center">hand in</td>
+<td style="text-align:center">hand over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>back</strong></td>
+<td style="text-align:center">back out</td>
+<td style="text-align:center">back up</td>
+<td style="text-align:center">back off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">back down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">back away</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>break</strong></td>
+<td style="text-align:center">break out</td>
+<td style="text-align:center">break up</td>
+<td style="text-align:center">break off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">break down</td>
+<td style="text-align:center">break in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>drop</strong></td>
+<td style="text-align:center">drop out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">drop off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">drop in</td>
+<td style="text-align:center">drop over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">drop by</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hold</strong></td>
+<td style="text-align:center">hold out</td>
+<td style="text-align:center">hold up</td>
+<td style="text-align:center">hold off</td>
+<td style="text-align:center">hold back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">hold on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pay</strong></td>
+<td style="text-align:center">pay out</td>
+<td style="text-align:center">pay up</td>
+<td style="text-align:center">pay off</td>
+<td style="text-align:center">pay back</td>
+<td style="text-align:center">pay down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>shut</strong></td>
+<td style="text-align:center">shut out</td>
+<td style="text-align:center">shut up</td>
+<td style="text-align:center">shut off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">shut down</td>
+<td style="text-align:center">shut in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>sit</strong></td>
+<td style="text-align:center">sit out</td>
+<td style="text-align:center">sit up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">sit back</td>
+<td style="text-align:center">sit down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">sit around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>blow</strong></td>
+<td style="text-align:center">blow out</td>
+<td style="text-align:center">blow up</td>
+<td style="text-align:center">blow off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">blow over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>hang</strong></td>
+<td style="text-align:center">hang out</td>
+<td style="text-align:center">hang up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">hang around</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">hang on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>cast</strong></td>
+<td style="text-align:center">cast out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">cast off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">cast down</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>draw</strong></td>
+<td style="text-align:center">draw out</td>
+<td style="text-align:center">draw up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">draw back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>fill</strong></td>
+<td style="text-align:center">fill out</td>
+<td style="text-align:center">fill up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">fill in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>grow</strong></td>
+<td style="text-align:center">grow out</td>
+<td style="text-align:center">grow up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">grow back</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>do</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">do up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">do over</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>keep</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">keep up</td>
+<td style="text-align:center">keep off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>make</strong></td>
+<td style="text-align:center">make out</td>
+<td style="text-align:center">make up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pack</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pack up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pack in</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>pick</strong></td>
+<td style="text-align:center">pick out</td>
+<td style="text-align:center">pick up</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>show</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">show up</td>
+<td style="text-align:center">show off</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>try</strong></td>
+<td style="text-align:center">try out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">try on</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>find</strong></td>
+<td style="text-align:center">find out</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>Again, the rows and columns are sorted by a rough measure of frequency/popularity: the number of words appearing in each column/row, with ties broken alphabetically.</p>
+<p>Many of these accompanying particles are recognizable as adverbs and/or prepositions. In order to classify an accompanying particle of a phrasal verb, one may examine the syntactic constraints on the <em>location</em> of the particle in the relevant verb phrase/clause. In German, when a separable verb is used in separated form, the detached prefix appears as a particle at the end of the verb phrase/clause. With English phrasal verbs, by contrast, this is one potential outcome, but it is not universally permitted. This leads to a distinct concept of ‘separability’ for English phrasal verbs: whether or not the accompanying particle must appear immediately after the verb.</p>
+<h2>Further study</h2>
+<p>The four tables presented in this document, along with their accompanying explanations, only scratch the surface in describing the history and usage of affixed verbs in Germanic and Romance languages. Here are a few leads for further study.</p>
+<h3>Mixed-origin compounds</h3>
+<p>The tables above each use all-Germanic or all-Latinate roots and affixes to simplify the exposition; however, in a blended language such as English the appearance of mixed-original compounding is not too surprising. For instance, <a href="https://en.wiktionary.org/wiki/catch"><strong>catch</strong></a> is used as the root verb for a few phrasal verbs, while <a href="https://en.wiktionary.org/wiki/around"><strong>around</strong></a> is used as the accompanying particle for several phrasal verbs.</p>
+<p>In addition, <a href="https://en.wiktionary.org/wiki/calque">calques</a>, in which compound words are translated piece-by-piece in-place, can be considered a form of mixed origin: each piece of the word may have one origin while it is the manner of combination of those pieces that is of another origin. The tables above do not account for the possibility of calquing; that the verbs in the German table in particular are composed solely of Germanic roots and prefixes does not rule out the possibility that the inspiration for the coining of a given German prefixed verb came from a non-Germanic source (notably Latin).</p>
+<h3>Romance languges</h3>
+<p>The Latin-via-English table has considerable French influence; a table dedicated specifically to prefixed verbs in modern French would make for an interesting comparison. Tables could also be constructed for modern Spanish, Italian, and so on.</p>
+<h3>Germanic languages</h3>
+<p>With the varities of German and the varieties of Dutch having historically formed a large dialect continuum, it’s not always straightforward to delineate what is a language or a dialect even today; one could conduct a comparison of prefixed verb systems across modern German and Dutch varieties.</p>
+<p>The maritime trade of the Hanseatic League led to considerable borrowing of the <a href="https://en.wikipedia.org/wiki/Middle_Low_German">Middle Low German</a> prefixed verb system <a href="http://germanic.eu/Middle-Low-German-loanwords-in-the-Scandinavian-languages.htm">into Scandinavian languages</a>.</p>
+<h3>Slavic languages</h3>
+<p>Attaching affixes to roots is also a crucial form of wordbuilding in Slavic languages. <a href="https://en.wiktionary.org/wiki/Category:Russian_verbal_prefixes">Here is a list of Russian verb prefixes.</a></p>
+<h2>Additional references</h2>
+<p>Allen, Joseph Henry, Greenough, James Bradstreet, and Mahoney, Anne. <em>Allen And Greenough’s New Latin Grammar.</em> Focus, 2001 [1975, 1903].<br>
+Bodmer, Frederick. <em>The Loom of Language: An Approach to the Mastery of Many Languages</em>. W. W. Norton Company, 1985 [1943].<br>
+Clackson, James and Horrocks, Geoffrey. <em>The Blackwell History of the Latin Language.</em> Wiley-Blackwell, 2007.<br>
+Durrell, Martin. <em>Hammer’s German Grammar and Usage.</em> Routledge, 2002.<br>
+Diamond, Robert E. <em>Old English: Grammar and Reader.</em> Wayne State University Press, 1970.<br>
+Lehmann, Winfred P. <em>Theoretical Bases of Indo-European Linguistics.</em> Routledge, 1996.<br>
+Levin, Beth. <em>English Verb Classes and Alternations: A Preliminary Investigation.</em> University of Chicago Press, 1993.<br>
+Moreland, Floyd L. and Fleischer, Rita M. <em>Latin: An Intensive Course.</em> University of California Press, 1977.<br>
+Patrick, George Z. <em>Roots of the Russian Language: An Elementary Guide to Wordbuilding.</em> McGraw-Hill, 1989 [1937].<br>
+Payne, Thomas E. <em>Describing Morphosyntax.</em> Cambridge University Press, 1997.<br>
+Prokosch, Eduard. <em>A Comparative Germanic Grammar.</em> Tiger Xenophon, 2009 [1939].<br>
+Ringe, Donald A. <em>From Proto-Indo-European to Proto-Germanic, 2nd ed.</em> Oxford University Press, 2017.<br>
+Ringe, Donald A. and Taylor, Ann. <em>The Development of Old English.</em> Oxford University Press, 2014.<br>
+Robinson, Orrin W. <em>Old English and Its Closest Relatives: A Survey of the Earliest Germanic Languages.</em> Stanford University Press, 1993.<br>
+Solodow, Joseph B. <em>Latin Alive: The Survival of Latin in English and the Romance Languages.</em> Cambridge University Press, 2010.<br>
+Stern, Guy and Bleiler, E.F. <em>Essential German Grammar.</em> Dover Publications, 1961.<br>
+Wheelock, Frederic M. and LaFleur, Richard A. <em>Wheelock’s Latin, 7th ed.</em> Collins Reference, 2011 [1956].</p>
+<hr>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+  </body>
+</html>
