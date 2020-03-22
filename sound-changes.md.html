@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html data-markdown-preview-plus-context="html-export">
+  <head>
+    <meta charset="utf-8" />
+    <title>sound-changes.md</title>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 30px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+body {
+  overflow: initial !important;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 30px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+body > *:first-child {
+  margin-top: 0 !important;
+}
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+body .absent {
+  color: #c00;
+}
+body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+body .anchor:focus {
+  outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+body h1 tt,
+body h2 tt,
+body h3 tt,
+body h4 tt,
+body h5 tt,
+body h6 tt,
+body h1 code,
+body h2 code,
+body h3 code,
+body h4 code,
+body h5 code,
+body h6 code {
+  font-size: inherit;
+}
+body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+body h1 .anchor {
+  line-height: 1;
+}
+body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+body h2 .anchor {
+  line-height: 1;
+}
+body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+body h3 .anchor {
+  line-height: 1.2;
+}
+body h4 {
+  font-size: 1.25em;
+}
+body h4 .anchor {
+  line-height: 1.2;
+}
+body h5 {
+  font-size: 1em;
+}
+body h5 .anchor {
+  line-height: 1.1;
+}
+body h6 {
+  font-size: 1em;
+  color: #777;
+}
+body h6 .anchor {
+  line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+body ul,
+body ol {
+  padding-left: 2em;
+}
+body ul.no-list,
+body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body li > p {
+  margin-top: 16px;
+}
+body dl {
+  padding: 0;
+}
+body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+body blockquote > :first-child {
+  margin-top: 0;
+}
+body blockquote > :last-child {
+  margin-bottom: 0;
+}
+body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+body table th {
+  font-weight: bold;
+}
+body table th,
+body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .emoji {
+  max-width: none;
+}
+body span.frame {
+  display: block;
+  overflow: hidden;
+}
+body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+body span.frame span img {
+  display: block;
+  float: left;
+}
+body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+body span.float-left span {
+  margin: 13px 0 0;
+}
+body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+body code,
+body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+body code:before,
+body tt:before,
+body code:after,
+body tt:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+body code br,
+body tt br {
+  display: none;
+}
+body del code {
+  text-decoration: inherit;
+}
+body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+body .highlight {
+  margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+body pre {
+  word-wrap: normal;
+}
+body pre code,
+body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+body pre code:before,
+body pre tt:before,
+body pre code:after,
+body pre tt:after {
+  content: normal;
+}
+body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+span.critic.comment > span {
+  background-color: #fff;
+}
+a {
+  color: #337ab7;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #e5c07b;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>An Introduction to Germanic and Italic Sound Changes</h1>
+<p>by <a href="https://github.com/jnfischer/linguistics-drafts">John Fischer</a></p>
+<p><em><strong>Note:</strong> This is an early draft! Final version to be published elsewhere after revisions.</em></p>
+<h2>Introduction</h2>
+<p>Human languages change over time;
+a notable example of this is the phenomenon of <a href="https://en.wikipedia.org/wiki/Sound_change">sound change</a>.
+This article explores several sound changes that impacted the pronunciation
+of words of <a href="https://en.wikipedia.org/wiki/Germanic_languages">Germanic</a> and <a href="https://en.wikipedia.org/wiki/Italic_languages">Italic</a> origin.</p>
+<p>To motivate this exploration, consider the following two French verbs:</p>
+<ul>
+<li><strong>venir</strong>, which is semantically close to English <strong>come</strong></li>
+<li><strong>faire</strong>, which is semantically close to English <strong>do</strong></li>
+</ul>
+<p>Each French verbs looks and sounds nothing like its English counterpart. Surprisingly enough, however, <strong>venir</strong> and <strong>come</strong> are <em>cognates</em> — that is, they share a common etymological origin. Similarly, <strong>faire</strong> and <strong>do</strong> are cognates.</p>
+<p>Using Wiktionary, one can trace the histories of these French and English verbs; here is an illustration, with corresponding German and Italian verbs included as well:</p>
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/g%CA%B7em-"><strong>*gʷem-</strong></a> [Proto-Indo-European <em>“step”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/g%CA%B7enj%C5%8D"><strong>*gʷenjō</strong></a> [Proto-Italic <em>“come”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/venio"><strong>veniō · venīre · vēnī · ventum</strong></a> [Latin <em>“come, approach”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/venire#Italian"><strong>venire</strong></a> [Italian <em>“come, arrive”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/venir#French"><strong>venir</strong></a> [French <em>“come”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/kweman%C4%85"><strong>*kwemaną</strong></a> [Proto-Germanic <em>“come”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/kommen#German"><strong>kommen</strong></a> [German <em>“come”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/come#English"><strong>come</strong></a> [English <em>“come”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/d%CA%B0eh%E2%82%81-"><strong>*d<sup>h</sup>eh<sub>1</sub>-</strong></a> [Proto-Indo-European <em>“do, put, place”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/faki%C5%8D"><strong>*fakio</strong></a> [Proto-Italic <em>“make”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/facio#Latin"><strong>faciō · facere · fēcī · factum</strong></a> [Latin <em>“do, make”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/fare#Italian"><strong>fare</strong></a> [Italian <em>“do, make”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/faire#French"><strong>faire</strong></a> [French <em>“do, make”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/d%C5%8Dn%C4%85"><strong>*dōną</strong></a> [Proto-Germanic <em>“do, make, put, place”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/tun#German"><strong>tun</strong></a> [German <em>“do, put”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/do#English"><strong>do</strong></a> [English <em>“do”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>This article explores the prominent sound changes that are theorized to have influenced each of the language stages noted above. The focus is mostly on <em>consonant</em> changes, though changes impacting vowels and accent/stress are occasionally noted as well. The following outline roughly illustrates the language families considered in this article:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Indo-European_languages">Indo-European</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Germanic_languages">Germanic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/North_Germanic_languages">North Germanic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Old_Norse">Old Norse</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Weser-Rhine_Germanic">Weser-Rhine Germanic</a> (~‘Istvaeonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Frankish_language">Frankish</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dutch_language">Dutch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Elbe_Germanic">Elbe Germanic</a> (~‘Irminonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/High_German_languages">High German</a>  (predominant influencer of <a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a>)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/North_Sea_Germanic">North Sea Germanic</a> (~‘Ingvaeonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Old_Saxon">Old Saxon</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Middle_Low_German">Middle Low German</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Anglo-Frisian_languages">Anglo-Frisian</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/English_language">English</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Italic_languages">Italic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Osco-Umbrian_languages">Osco-Umbrian</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Latino-Faliscan_languages">Latino-Faliscan</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Latin">Latin</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Romance_languages">Romance</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/French_language">French</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Italian_language">Italian</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>(Although this outline is presented in tree form, the relationships among the groupings are not strictly those of a <a href="https://en.wikipedia.org/wiki/Tree_model">tree model</a>; some of the groupings may instead reflect <a href="https://en.wikipedia.org/wiki/Wave_model">wave model</a> and/or <a href="https://en.wikipedia.org/wiki/Linkage_%28linguistics%29">linkage</a> effects.)</p>
+<p>This article assumes basic familiarity with <a href="https://en.wikipedia.org/wiki/Articulatory_phonetics">articulatory phonetics</a>; otherwise an effort is made to introduce and/or reference relevant linguistic concepts inline.</p>
+<h2>Proto-Indo-European to Germanic and Italic</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Proto-Indo-European_language">Proto-Indo-European language</a> is the theorized ancestor of a large group of languages, the <a href="https://en.wikipedia.org/wiki/Indo-European_languages">Indo-European languages</a>. Per this theory, the Germanic and Italic languages evolved from Indo-European dialects. As with Proto-Indo-European, <a href="https://en.wikipedia.org/wiki/Proto-Germanic_language">Proto-Germanic</a> and <a href="https://en.wikipedia.org/wiki/Proto-Italic_language">Proto-Italic</a> are reconstructed based on the Germanic and Italic languages for which records exist.</p>
+<p>The following table, adapted partially from <a href="https://en.wikipedia.org/wiki/Proto-Indo-European_phonology">the Wikipedia article on PIE phonology</a>, presents the reconstructed plosive <a href="https://en.wikipedia.org/wiki/Phoneme">phonemes</a> of Proto-Indo-European:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Consonant_voicing_and_devoicing">Voicing</a> / <a href="https://en.wikipedia.org/wiki/Aspirated_consonant">aspiration</a></th>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Labial_consonant">Labial</a></th>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Dental_consonant">Dental</a> / <a href="https://en.wikipedia.org/wiki/Alveolar_consonant">Alveolar</a></th>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Palatalization_%28phonetics%29">Palatalized</a> velar</th>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Velar_consonant">Velar</a></th>
+<th style="text-align:center"><a href="https://en.wikipedia.org/wiki/Labialization">Labialized</a> velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>voiceless</em></td>
+<td style="text-align:center">*p</td>
+<td style="text-align:center">*t</td>
+<td style="text-align:center">*ḱ</td>
+<td style="text-align:center">*k</td>
+<td style="text-align:center">*k<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>voiced</em></td>
+<td style="text-align:center">(*b)</td>
+<td style="text-align:center">*d</td>
+<td style="text-align:center">*ǵ</td>
+<td style="text-align:center">*g</td>
+<td style="text-align:center">*g<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>voiced aspirated</em></td>
+<td style="text-align:center">*b<sup>h</sup></td>
+<td style="text-align:center">*d<sup>h</sup></td>
+<td style="text-align:center">*ǵ<sup>h</sup></td>
+<td style="text-align:center">*g<sup>h</sup></td>
+<td style="text-align:center">*g<sup>wh</sup></td>
+</tr>
+</tbody>
+</table>
+<p>(Here *b is in parentheses because it appears infrequently.)</p>
+<p>Each * indicates lack of attestation; this is a common convention. The symbols in each cell reflect the estimated phonetic realization of the given phoneme according to traditional consensus. There are other proposals for the realizations of these phonemes, for instance the <a href="https://en.wikipedia.org/wiki/Glottalic_theory">glottalic theory</a>; this article will stick to the traditional theory.</p>
+<h3>Changes common to Germanic and Italic</h3>
+<p>As the Indo-European dialects diverged, some dialects experienced common changes. Whether this is</p>
+<ul>
+<li>(i) due to a given pair of dialects beginning the divergence process comparatively late, or</li>
+<li>(ii) due to divergent dialects remaining in contact and undergoing a change together —</li>
+</ul>
+<p>— can be very difficult to assess, and this article does not attempt to tackle that topic for Germanic and Italic. Two notable sound changes, however, did occur similarly in both the Germanic and Italic varieties of Indo-European: <a href="https://en.wikipedia.org/wiki/Centum_and_satem_languages">centumization</a> and <a href="https://en.wikipedia.org/wiki/Laryngeal_theory#Proposed_indirect_reflexes">laryngeal loss</a>.</p>
+<h4>Centumization</h4>
+<p>The ‘palatalized velar’ column in the stop chart above reflects the observation that Indo-European languages are observed to fall into two groups with respect to a particular set of cognates.</p>
+<ul>
+<li>For <em>centum</em> languages, the palatalized velar column is theorized to have collapsed into the velar column.</li>
+<li>For <em>satem</em> languages, the labiovelars are theorized to have collapsed into the velars, while the palatalized velars came to be <a href="https://en.wikipedia.org/wiki/Assibilation">assibilated</a>.</li>
+</ul>
+<p>The Germanic and Italic varieties of Indo-European both underwent centumization, resulting in the following stop system:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Voicing / aspiration</th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar (possibly formerly palatalized)</th>
+<th style="text-align:center">Labialized velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>voiceless</em></td>
+<td style="text-align:center">*p</td>
+<td style="text-align:center">*t</td>
+<td style="text-align:center">*k</td>
+<td style="text-align:center">*k<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>voiced</em></td>
+<td style="text-align:center">(*b)</td>
+<td style="text-align:center">*d</td>
+<td style="text-align:center">*g</td>
+<td style="text-align:center">*g<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>voiced aspirated</em></td>
+<td style="text-align:center">*b<sup>h</sup></td>
+<td style="text-align:center">*d<sup>h</sup></td>
+<td style="text-align:center">*g<sup>h</sup></td>
+<td style="text-align:center">*g<sup>wh</sup></td>
+</tr>
+</tbody>
+</table>
+<h4>Laryngeal loss</h4>
+<p>Early Indo-European dialects are theorized to have had a set of consonant sounds called <a href="https://en.wikipedia.org/wiki/Laryngeal_theory">laryngeals</a>. The name is a historical holdover; while in the past they were speculated to have been articulated in the throat, this is now more commonly viewed as only a partial possibility. Nowadays there are typically considered to have been three laryngeal phonemes, labeled *h<sub>1</sub>, *h<sub>2</sub>, and *h<sub>3</sub> to reflect that the laryngeals may have had sounds resembling [h]. In particular, [h] itself is postulated as a possible pronunciation of *h<sub>1</sub>.</p>
+<p>Direct evidence of laryngeals has been found in the extinct <a href="https://en.wikipedia.org/wiki/Anatolian_languages">Anatolian languages</a>; however, per laryngeal theory the laryngeals have been lost in all Indo-European languages spoken today. Before this loss, however, the sounds adjacent to laryngeals were affected by the laryngeals. The laryngeals are theorized to have had an especially prominent impact on the vowel sounds of Indo-European dialects. In general, one can view the theorized progression as follows:</p>
+<ul>
+<li>Earlier varieties of Indo-European are theorized to have had fewer <em>phonemic</em> vowel sounds (although each such phonemic vowel could have had greater <em>phonetic</em> variation).</li>
+<li>The coloring influence of laryngeals caused more distinct phonemes — often vowel phonemes, but in some cases consonant phonemes as well — to be distinguished.</li>
+<li>If the diversified laryngeal-adjacent sounds could serve to distinguish a given word from other words regardless of the presence of the adjacent laryngeals, then the laryngeals could be dropped.</li>
+</ul>
+<p>Here are three major schemes of laryngeal coloring:</p>
+<ul>
+<li><em>Greek-style.</em> Visible in Ancient Greek, especially in the vowel system. The vowel changes of Greek verb conjugation <a href="https://en.wikipedia.org/wiki/Laryngeal_theory#Support_from_Greek_ablaut">were influential</a> in the development of laryngeal theory.</li>
+<li><em>Latin-style.</em> Visible in Latin, especially in the vowel system.</li>
+<li><em>Sanskrit-style.</em> Visible in Sanskrit in both vowels and consonants; the voiceless aspirates of Sanskrit are theorized to have arisen from voiced aspirates adjacent to laryngeals.</li>
+</ul>
+<p>Extrapolating the progression of Indo-European laryngeal loss is an area of ongoing research. Here are a couple references for this area of study:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Indo-European_sound_laws#Vowels_and_syllabic_consonants">comparison of vowel outcomes across Indo-European families</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Proto-Indo-European_phonology#Laryngeal_deletion_rules">hypothesis that even Proto-Indo-European exhibited conditional laryngeal deletion</a></li>
+</ul>
+<h3>The emergence of Germanic</h3>
+<p>When comparing cognate words across Indo-European branches, Germanic words exhibit dramatically different consonant sounds from the other branches; however, these extensive differences follow recognizable and predictable patterns. During the the 19th century, these patterns were described formally, yielding <a href="https://en.wikipedia.org/wiki/Grimm%27s_law">Grimm’s Law</a> and <a href="https://en.wikipedia.org/wiki/Verner%27s_law">Verner’s Law</a>. Together, these laws give a compelling view of how Indo-European consonants changed over time into the consonants of Proto-Germanic.</p>
+<p>Grimm’s Law presents a large <a href="https://en.wikipedia.org/wiki/Chain_shift">chain shift</a>, in which Indo-European consonants retained their place of articulation while shifting their other articulatory characteristics:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Labialized Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>IE voiceless plosives</em></td>
+<td style="text-align:center">*p → *<a href="https://en.wikipedia.org/wiki/Voiceless_bilabial_fricative">ɸ</a></td>
+<td style="text-align:center">*t → *<a href="https://en.wikipedia.org/wiki/Voiceless_dental_fricative">θ</a></td>
+<td style="text-align:center">*k → *<a href="https://en.wikipedia.org/wiki/Voiceless_velar_fricative">x</a></td>
+<td style="text-align:center">*k<sup>w</sup> → *<a href="https://en.wikipedia.org/wiki/Labialized_velar_consonant">x<sup>w</sup></a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>IE voiced plosives</em></td>
+<td style="text-align:center">*b → *p</td>
+<td style="text-align:center">*d → *t</td>
+<td style="text-align:center">*g&nbsp;→&nbsp;*k</td>
+<td style="text-align:center">*g<sup>w</sup> → *k<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>IE voiced aspirated plosives</em></td>
+<td style="text-align:center">*b<sup>h</sup> → {*<a href="https://en.wikipedia.org/wiki/Voiced_bilabial_fricative">β</a>&nbsp;|&nbsp;*b}</td>
+<td style="text-align:center">*d<sup>h</sup> → {*<a href="https://en.wikipedia.org/wiki/Voiced_dental_fricative">ð</a>&nbsp;|&nbsp;*d}</td>
+<td style="text-align:center">*g<sup>h</sup> → {*<a href="https://en.wikipedia.org/wiki/Voiced_velar_fricative">ɣ</a>&nbsp;|&nbsp;*g}</td>
+<td style="text-align:center">*g<sup>wh</sup> → {*<a href="https://en.wikipedia.org/wiki/Labialized_velar_consonant">ɣ<sup>w</sup></a>&nbsp;|&nbsp;*g<sup>w</sup>}</td>
+</tr>
+</tbody>
+</table>
+<p>Some brief notes on the sounds shown here, to connect them to familiar English concepts:</p>
+<ul>
+<li>ɸ generally progresses to English <strong>f</strong>; the voiced counterpart of ɸ is β</li>
+<li>θ generally progresses to English <strong>th</strong>; the voiced counterpart of θ is ð</li>
+<li>x generally progresses to English <strong>h</strong>; the voiced counterpart of x is ɣ</li>
+<li>x<sup>w</sup> generally progresses to English <strong>wh</strong>; the voiced counterpart of x<sup>w</sup> is ɣ<sup>w</sup></li>
+</ul>
+<p>Each row shows a shift away from an articulation that the next row could then shift into:</p>
+<ul>
+<li>IE voiceless plosives became <em>fricative</em> in Germanic</li>
+<li>IE voiced plosives became <em>voiceless</em> in Germanic</li>
+<li>IE aspirated plosives <em>lose phonemic aspiration</em> while remaining voiced in Germanic</li>
+</ul>
+<p>Given these connections between adjacent rows, Grimm’s Law is often stated concisely in ‘chain form’ as follows:</p>
+<ul>
+<li>*b<sup>h</sup> → *b → *p → *ɸ</li>
+<li>*d<sup>h</sup> → *d → *t → *θ</li>
+<li>*g<sup>h</sup> → *g → *k → *x</li>
+<li>*g<sup>wh</sup> → *g<sup>w</sup> → *k<sup>w</sup> → *x<sup>w</sup></li>
+</ul>
+<p>This representation obscures one aspect of the table above, however: as Proto-Germanic formed, the voiced plosive phonemes are postulated to have had voiced fricative <a href="https://en.wikipedia.org/wiki/Allophone">allophones</a>, for reasons to be noted later.</p>
+<p>The consonant shifting of Grimm’s Law does not always apply. For instance, in consonant clusters, only the first consonant is shifted if eligible. Indo-European <em>*sp-</em>, <em>*st-</em>, etc. do not exhibit Grimm’s Law shifting.</p>
+<p>Grimm’s Law by itself plausibly explains many Germanic consonant sounds; however, sometimes it proposes a voiceless fricative but a voiced sound is observed instead. When and how these ‘unexpected’ voiced sounds appear is clarified by <a href="https://en.wikipedia.org/wiki/Verner%27s_law">Verner’s Law</a>.</p>
+<p>The traditional formulation of Verner’s Law assumes an intermediary stage of PIE → Proto-Germanic evolution on which Grimm’s Law — or at least the top row of the Grimm’s Law table above — has already applied, and states that</p>
+<ul>
+<li>the language stage in question generally retains <a href="https://en.wikipedia.org/wiki/Proto-Indo-European_accent">the accent system of Proto-Indo-European</a>, and</li>
+<li>at this language stage, a voiceless fricative shifts to voiced when the preceding syllable is <em>unstressed</em>.</li>
+</ul>
+<p>(Note that Verner’s Law applies not just to the voiceless fricatives produced per Grimm’s Law, but also to *s, which is unchanged by both laryngeal loss and Grimm’s Law.)</p>
+<p>In Germanic languages both past and present, initial-syllable stress is favored; Proto-Germanic is theorized to have had initial-syllable stress as well, with the original PIE stress system having been lost. Verner’s Law implies that through fricative voicing, Proto-Germanic retains indirect evidence of the Proto-Indo-European accent system. Testing this proposition entails comparing Germanic words to established cognates in languages like Ancient Greek and Sanskrit, which are also believed to have retained the PIE accent patterns in portions of their lexicons.</p>
+<p>In Grimm’s Law, the post-shift voiced plosive phonemes are presented with fricative allophones. This allophony influences the outcome of Verner’s Law, as newly-voiced fricatives could in turn be considered phonemically equivalent to voiced plosives.</p>
+<p>Here is a table that presents the cumulative effects of Grimm’s Law and Verner’s Law:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Labialized Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>IE voiceless plosives,<br>usual outcome</em></td>
+<td style="text-align:center">*p → *ɸ</td>
+<td style="text-align:center">*t → *θ</td>
+<td style="text-align:center">*k → *x</td>
+<td style="text-align:center">*k<sup>w</sup> → *x<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>IE voiceless plosives</em>,<br>after pre-Gmc-unstressed syllable</td>
+<td style="text-align:center">*p → *ɸ → {*β&nbsp;|&nbsp;*b}</td>
+<td style="text-align:center">*t → *θ → {*ð&nbsp;|&nbsp;*d}</td>
+<td style="text-align:center">*k → *x → {*ɣ&nbsp;|&nbsp;*g}</td>
+<td style="text-align:center">*k<sup>w</sup> → *x<sup>w</sup> → {*ɣ<sup>w</sup>&nbsp;|&nbsp;*g<sup>w</sup>}</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>IE voiced plosives</em></td>
+<td style="text-align:center">*b → *p</td>
+<td style="text-align:center">*d → *t</td>
+<td style="text-align:center">*g&nbsp;→&nbsp;*k</td>
+<td style="text-align:center">*g<sup>w</sup> → *k<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>IE voiced aspirated plosives</em></td>
+<td style="text-align:center">*b<sup>h</sup> → {*β&nbsp;|&nbsp;*b}</td>
+<td style="text-align:center">*d<sup>h</sup> → {*ð&nbsp;|&nbsp;*d}</td>
+<td style="text-align:center">*g<sup>h</sup> → {*ɣ&nbsp;|&nbsp;*g}</td>
+<td style="text-align:center">*g<sup>wh</sup> → {*ɣ<sup>w</sup>&nbsp;|&nbsp;*g<sup>w</sup>}</td>
+</tr>
+</tbody>
+</table>
+<p>Some intriguing questions remain:</p>
+<ul>
+<li>Exactly when did Verner’s Law occur relative to Grimm’s Law? <a href="https://en.wikipedia.org/wiki/Verner%27s_law#Dating_the_change_described_by_Verner's_law">There are advantages</a> to a theory in which Verner’s Law is concurrent with Grimm’s Law or even precedes it.</li>
+<li>How were the allophonies {*β | *b} for /b/, {*ð | *d} for /d/, etc. realized in practice?
+<ul>
+<li>Was /b/ pronounced [b] word-initially and [β] word-internally; and so on for /d/, etc.?</li>
+<li>Did /b/ tend to be pronounced [β] earlier on, with a later transition toward [b]; and so on for /d/, etc.?</li>
+</ul>
+</li>
+</ul>
+<h3>The emergence of Italic</h3>
+<p>The pre-Italic languages, like the pre-Germanic languages, are theorized to have developed new voiceless fricative sounds after laryngeal loss. (As noted above, this article assumes the traditional consensus view of Proto-Indo-European phonetics.) Whereas in Germanic these fricatives arose from the voiceless plosives as part of the massive Grimm’s Law shift, in Italic they arose from the aspirated plosives while other plosives generally retained their Proto-Indo-European articulations.</p>
+<p>The Italic shift away from aspirated plosives impacted word-initial and word-internal consonants differently. Skipping past Proto-Italic to Latin, the shift can be glossed succinctly as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Labialized velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>word-initial</em></td>
+<td style="text-align:center">*b<sup>h</sup> → f</td>
+<td style="text-align:center">*d<sup>h</sup> → f</td>
+<td style="text-align:center">*g<sup>h</sup> → h</td>
+<td style="text-align:center">*g<sup>wh</sup> → f</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>word-internal</em></td>
+<td style="text-align:center">*b<sup>h</sup>&nbsp;→&nbsp;b</td>
+<td style="text-align:center">*d<sup>h</sup> → d</td>
+<td style="text-align:center">*g<sup>h</sup> → {g,&nbsp;h,&nbsp;<em>etc.</em>}</td>
+<td style="text-align:center">*g<sup>wh</sup> → {w,&nbsp;<em>etc.</em>}</td>
+</tr>
+</tbody>
+</table>
+<p>Some notes:</p>
+<ul>
+<li>The Latin consonant sounds lack *, as Latin has extensive attestation.</li>
+<li>/w/ is labeled as such because the sound [w] is the <a href="https://en.wikipedia.org/wiki/Latin_spelling_and_pronunciation">reconstructed classical pronunciation</a> of the Latin letter <strong>v</strong>. For the other Latin consonant sounds above, the Latin letter and the phonetic representation match (to be expected as the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a> favors letters of Latin origin as feasible).</li>
+<li>There are numerous exceptions to this table; for instance, consonant clusters complicate the outcome. <a href="https://www.goodreads.com/book/show/171901.Phonetics_and_Philology">[Stuart-Smith 2004]</a></li>
+</ul>
+<p>What would the table above look like for Proto-Italic instead of Latin? To assess this, scholars examine the Italic languages contemporary with Latin, including Faliscan, Oscan, and Umbrian. (This assumes that the similar features of Italic languages are predominantly due to common descent instead of areal contact; current consensus favors common descent, but areal contact has also been argued.)</p>
+<p>Coming up with definite <a href="https://en.wikipedia.org/wiki/Proto-Italic_language#Phonology">phonetic realizations for the phonemes of Proto-Italic</a> corresponding to Indo-European *b<sup>h</sup> / *d<sup>h</sup> / *g<sup>h</sup> / *g<sup>wh</sup> entails answering some challenging questions about the evolution of dialectal Indo-European into Italic:</p>
+<ul>
+<li>At what point did the word-initial and word-internal pronunciations of these phonemes diverge?</li>
+<li>Given the PIE → Latin word-initial sound changes are from voiced aspirates to voiceless fricatives, one or more intermediate stages seems likely. What such stages are plausible?
+<ul>
+<li><em>Voiceless aspirates</em>, i.e. *p<sup>h</sup> / *t<sup>h</sup> / *k<sup>h</sup> / *k<sup>wh</sup>?</li>
+<li><em>Voiceless fricatives</em> with distinct ‘ancestral’ articulations, i.e. *ɸ / *θ / *x / *x<sup>w</sup> (as seen above in the section on the development of Proto-Germanic)?</li>
+<li><em>Voiced fricatives</em>, i.e. *<a href="https://en.wikipedia.org/wiki/Voiced_bilabial_fricative">β</a> / *<a href="https://en.wikipedia.org/wiki/Voiced_dental_fricative">ð</a> / *<a href="https://en.wikipedia.org/wiki/Voiced_velar_fricative">ɣ</a> / *<a href="https://en.wikipedia.org/wiki/Labialized_velar_consonant">ɣʷ</a>? (This intermediate stage might have applied word-internally as well. These sounds were also introduced above in the section on the development of Proto-Germanic.)</li>
+</ul>
+</li>
+<li>At what point did many of the word-initial phonemes collapse together? Fricative collapse is especially plausible; if so, which fricative collapse is more likely to have occurred?
+<ul>
+<li><em>Voiced collapse</em>, i.e. {*β / *ð / *ɣʷ} → *β?</li>
+<li><em>Early voiceless collapse</em>, i.e. {*ɸ / *θ / *x<sup>w</sup>} → *ɸ?</li>
+<li><em>Late voiceless collapse</em>, i.e. {*f / *θ / *h<sup>w</sup>} → *f?</li>
+</ul>
+</li>
+</ul>
+<p>Here is a <em>highly speculative</em> view of PIE → Proto-Italic shifts, consulting <a href="https://en.wikipedia.org/wiki/Proto-Italic_language#Phonology">the Wikipedia article on Proto-Italic</a> yet with additional assumptions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Labialized velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>word-initial</em></td>
+<td style="text-align:center">*b<sup>h</sup>&nbsp;→&nbsp;*ɸ</td>
+<td style="text-align:center">*d<sup>h</sup> → *θ</td>
+<td style="text-align:center">*g<sup>h</sup> → *x</td>
+<td style="text-align:center">*g<sup>wh</sup> → *x<sup>w</sup></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>word-internal</em></td>
+<td style="text-align:center">*b<sup>h</sup>&nbsp;→&nbsp;β</td>
+<td style="text-align:center">*d<sup>h</sup> → ð</td>
+<td style="text-align:center">*g<sup>h</sup> → *ɣ</td>
+<td style="text-align:center">*g<sup>wh</sup> → *ɣ<sup>w</sup></td>
+</tr>
+</tbody>
+</table>
+<p>This table, while including many sounds similar to those postulated for Proto-Germanic, is probably too artificially ‘tidy’:</p>
+<ul>
+<li>All eight cells have separate phonetic reconstructions. Various stages of Proto-Italic may have exhibited different phonemic groupings, with speakers interpreting allophones within a group as effectively having the same sound.</li>
+<li>Even if some or all of the symbols above were to capture phonemes effectively, they may not represent the correct articulations. Currently every cell postulates a fricative sound.</li>
+<li>The chosen cell values don’t take into account the commonalities of the attested Italic languages to specifically derive a ‘most recent common ancestor’ for those languages.</li>
+</ul>
+<p>Later in this article, these speculative reconstructions will be explored by examining Latin words.</p>
+<p><a href="https://www.goodreads.com/book/show/171901.Phonetics_and_Philology">[Stuart-Smith 2004]</a> explores possible evolutionary progressions for the sounds of Proto-Italic in considerable detail.</p>
+<h3>Notable references</h3>
+<p><em>Wikipedia article:</em></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proto-Germanic_language#Phonological_stages_from_Proto-Indo-European_to_end_of_Proto-Germanic">https://en.wikipedia.org/wiki/Proto-Germanic_language#Phonological_stages_from_Proto-Indo-European_to_end_of_Proto-Germanic</a></li>
+</ul>
+<p><em>Books:</em></p>
+<p>Lehmann, Winfred P. <em>Theoretical Bases of Indo-European Linguistics.</em> Routledge, 1996.<br>
+Ringe, Donald A. <em>From Proto-Indo-European to Proto-Germanic, 2nd ed.</em> Oxford University Press, 2017.<br>
+Stuart-Smith, Jane. <em>Phonetics and Philology: Sound Change in Italic.</em> Oxford University Press, 2004.</p>
+<h2>Germanic sound changes</h2>
+<p>Here is an outline of the evolution of several Germanic languages:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Germanic_languages">Germanic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/North_Germanic_languages">North Germanic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Old_Norse">Old Norse</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Weser-Rhine_Germanic">Weser-Rhine Germanic</a> (~‘Istvaeonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Frankish_language">Frankish</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dutch_language">Dutch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Elbe_Germanic">Elbe Germanic</a> (~‘Irminonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/High_German_languages">High German</a>  (predominant influencer of <a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a>)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/North_Sea_Germanic">North Sea Germanic</a> (~‘Ingvaeonic’)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Old_Saxon">Old Saxon</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Middle_Low_German">Middle Low German</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Anglo-Frisian_languages">Anglo-Frisian</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/English_language">English</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>This section introduces some of the prominent sound changes that occurred as part of this evolution. Since many Germanic languages have substantial attestation, the symbol * appears less in this section; in addition, since for some Germanic languages the phonetic realizations of phonemes are conclusively known, this section has more opportunities to call out phonetic realizations with conventional bracket notation [#] (whereas /#/, by contrast, denotes phonemes).</p>
+<h3>Rhotacism</h3>
+<p>In linguistics, the word <a href="https://en.wikipedia.org/wiki/Rhotacism_%28sound_change%29">rhotacism</a> is used for a sound change leading to the pronunciation [r]. Rhotacism <a href="https://en.wikipedia.org/wiki/Rhotacism_%28sound_change%29#Germanic_languages">occurred prominently in the Germanic languages</a>, especially via the progression [s] → [z] → [r], which could occur for an [s] appearing in between two vowels. (As noted above, the transition [s] → [z] is predicted by Verner’s Law.)</p>
+<p>Modern English <strong>is</strong> and <strong>are</strong> used to be pronounced more similarly, but <strong>are</strong> took on an [r] sound due to rhotacism. The same is the case for <strong>was</strong> and <strong>were</strong>.</p>
+<h3>Palatalization</h3>
+<p>As a centum language, Proto-Germanic is theorized to have lacked distinct palatal phonemes, even if the realizations of other phonemes (especially velars) could be <a href="https://en.wikipedia.org/wiki/Allophone">allophonically</a> palatal. As the Germanic languages diverged, however, palatalizations occurred at various times. Since Germanic languages borrowed from one another, sometimes <a href="https://en.wikipedia.org/wiki/Doublet_%28linguistics%29"><em>doublets</em></a>, cognates within a single language that are pronounced differently due to different evolutionary histories, <a href="https://en.wiktionary.org/wiki/Appendix:English_doublets#Old_English_palatalization">would result</a>.</p>
+<p>Old Norse is a notable source of non-palatalized words in modern English:</p>
+<ul>
+<li><strong>bleak</strong> (cognate with <strong>bleach</strong>)</li>
+<li><strong>skirt</strong> (cognate with <strong>shirt</strong>)</li>
+</ul>
+<h3>High German Consonant Shift</h3>
+<p>In the High German dialects, a series of consonant changes occurred that are collectively called the <a href="https://en.wikipedia.org/wiki/High_German_consonant_shift">High German consonant shift</a>. The shift caused voiceless plosives to transition into fricatives (or <a href="https://en.wikipedia.org/wiki/Affricate">affricates</a> in some cases), while voiced plosives in turn transitioned into voiceless plosives.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Central_German">Central German</a> dialects experienced some phases of the consonant shift but not others. Germanic language varieties closest to the North Sea were left unaffected.</p>
+<p>Many, but not all, of the consonant changes of the High German Consonant Shift are reflected in the vocabulary of <a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a>.</p>
+<h3>Loss of dental fricatives</h3>
+<p>English and Icelandic still retain the <a href="https://en.wikipedia.org/wiki/Dental_fricative">dental fricative</a> sounds [θ] and [ð] theorized by Grimm’s Law and Verner’s Law to be present in Proto-Germanic. (These are the two English <strong>th</strong>-sounds.) In many other Germanic languages, however, these sounds no longer appear, generally having transitioned into either [d] and/or [t]. In High German dialects, transition toward [d] <a href="https://en.wikipedia.org/wiki/High_German_consonant_shift#Overview_table">is particularly common</a>.</p>
+<h3>English Great Vowel Shift</h3>
+<p>Modern English vowel orthography is unusual compared to other languages that use the Roman alphabet; much of this divergence is due to the <a href="https://en.wikipedia.org/wiki/Great_Vowel_Shift">Great Vowel Shift</a>. Changes in vowel pronunciations occurred over hundreds of years, making it difficult to call out a specific time at which the shift ‘had’ vs. ‘had not’ happened; nevertheless, the Great Vowel Shift is a prominent component of the transition from <a href="https://en.wikipedia.org/wiki/Middle_English">Middle English</a> to <a href="https://en.wikipedia.org/wiki/Early_Modern_English">Early Modern English</a>.</p>
+<h3>Notable references</h3>
+<p>Prokosch, Eduard. <em>A Comparative Germanic Grammar.</em> Tiger Xenophon, 2009 [1939].<br>
+Ringe, Donald A. and Taylor, Ann. <em>The Development of Old English.</em> Oxford University Press, 2014.<br>
+Robinson, Orrin W. <em>Old English and Its Closest Relatives: A Survey of the Earliest Germanic Languages.</em> Stanford University Press, 1993.</p>
+<h2>Italic sound changes</h2>
+<p>Here is an outline of the evolution of some of the Italic languages:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Italic_languages">Italic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Osco-Umbrian_languages">Osco-Umbrian</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Latino-Faliscan_languages">Latino-Faliscan</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Latin">Latin</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Romance_languages">Romance</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/French_language">French</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Italian_language">Italian</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>These languages can be separated into two groups for study based on time period:</p>
+<ul>
+<li><em>Ancient Italic languages</em>, including the languages contemporary with <a href="https://en.wikipedia.org/wiki/Old_Latin">Old Latin</a> and <a href="https://en.wikipedia.org/wiki/Classical_Latin">Classical Latin</a>.</li>
+<li><em>Romance languages</em>, which diverged from <a href="https://en.wikipedia.org/wiki/Vulgar_Latin">Vulgar Latin</a>.</li>
+</ul>
+<p>Since Italic languages have substantial attestation, the symbol * appears less in this section; this section also has more opportunities to call out phonetic realizations with conventional bracket notation [#] (whereas /#/, by contrast, denotes phonemes).</p>
+<h3>The emergence of Latin</h3>
+<p>The section on the emergence of Proto-Italic includes tables illustrating shifts of the Proto-Indo-European aspirated plosives to their Latin outcomes, which are well-attested, and to potential Proto-Italic outcomes, which are much less certain. Based on these two tables, here is a table, again <em>highly speculative</em>, illustrating the shift from a subset of the Proto-Italic consonants to their Latin outcomes:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Labial</th>
+<th style="text-align:center">Dental / Alveolar</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Labialized velar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>word-initial</em></td>
+<td style="text-align:center">*ɸ → f</td>
+<td style="text-align:center">*θ → f</td>
+<td style="text-align:center">*x → h</td>
+<td style="text-align:center">*x<sup>w</sup> → f</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>word-internal</em></td>
+<td style="text-align:center">*β&nbsp;→&nbsp;b</td>
+<td style="text-align:center">*ð → d</td>
+<td style="text-align:center">*ɣ → {g,&nbsp;h,&nbsp;<em>etc.</em>}</td>
+<td style="text-align:center">*ɣ<sup>w</sup> → {w,&nbsp;<em>etc.</em>}</td>
+</tr>
+</tbody>
+</table>
+<p>The caveats noted previously apply; in particular, this table may not properly capture the phonemic distinctions of the <em>most recent common ancestor</em> of the attested Italic languages, as the collapse of the word-initial sounds *ɸ, *θ, *x<sup>w</sup> (whatever their actual distinct articulations) into a single perceived sound may already have occurred at that stage.</p>
+<p>The Proto-Italic reconstructions provided in Wiktionary can be compared to the above table:</p>
+<ul>
+<li>For the ancestor of Latin <strong>vādō</strong>, Wiktionary gives Proto-Italic <a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/w%C4%81%C3%B0%C5%8D">*wāðō</a>.</li>
+<li>For the ancestor of Latin <strong>faciō</strong>, Wiktionary gives Proto-Italic <a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/faki%C5%8D">*fakiō</a>. The table above would instead postulate *θakiō, suggesting that Wiktionary favors a later-stage reconstruction of Proto-Italic than the above table.</li>
+<li>For the ancestor of Latin <strong>nix</strong> (genitive <strong>nivis</strong>), Wiktionary gives Proto-Italic <a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/sniks">*sniks</a>, for the singular, while noting the Proto-Italic stem to be *sniɣʷ-.
+<ul>
+<li>While *sniks is reconstructed with a consonant stem, <strong>nix</strong>/<strong>nivis</strong> is declined as an <em>i</em>-stem noun (stem <strong>nivi-</strong>), notably impacting the genitive plural. While such reinterpretations did occur over the history of Latin, they tended to favor a consonant stem outcome; in this case <strong>v</strong> (i.e. [w]), as a semivowel, may have been perceived as an unusual/uncommon consonant to anchor a stem.</li>
+<li>*β appears in the inflections ancestral to Latin <strong>-(i)bus</strong> inflections.</li>
+</ul>
+</li>
+</ul>
+<p>The shifts in the table above are for sounds that were originally Proto-Indo-European aspirated plosives. An example of a shift between Proto-Italic and Latin outside the PIE aspirated series is *g<sup>w</sup> → w, notable in the origin of Latin <a href="https://en.wiktionary.org/wiki/venio"><strong>venio</strong></a>. This shift can be placed after the Proto-Italic period because other Italic languages exhibit different outcomes — notably *g<sup>w</sup> → b in Osco-Umbrian, by analogy with another Osco-Umbrian shift *k<sup>w</sup> → p. Knowledge of these shifts is helpful for identifying words of Osco-Umbrian origin in Latin; such loanwords include <strong>bos</strong> and <strong>prope</strong>.</p>
+<h3>Old Latin changes</h3>
+<p>Latin underwent some sound changes over its history, especially in the Old Latin era before Classical Latin rose to prominence as a prescribed written standard. Two prominent examples are <em>rhotacism</em> and <em>unstressed vowel reduction</em>.</p>
+<h4>Rhotacism</h4>
+<p>Just as Germanic languages have historical <a href="https://en.wikipedia.org/wiki/Rhotacism_%28sound_change%29">rhotacism</a>, notably via the progression [s] → [z] → [r], Latin also <a href="https://en.wikipedia.org/wiki/Rhotacism_%28sound_change%29#Italic_languages">underwent rhotacism</a> early in its development from Proto-Italic, with the progression [s] → [z] → [r] similarly prominent. As Latin was written down before [z] → [r] occurred, this is a historically-attested sound change.</p>
+<p>Latin’s cousin language Oscan resisted rhotacism but exhibited [s]-[z] allophony. Proto-Italic itself may have exhibited [z] as an allophone of /s/.</p>
+<h4>Old Latin stress and vowels</h4>
+<p>Similar to Proto-Germanic, Proto-Italic is theorized to have had initial-syllable stress, with Old Latin <a href="https://en.wikipedia.org/wiki/Old_Latin#Stress">retaining this stress paradigm</a>. During the period of initial-syllable stress, vowel sounds in unstressed syllables were <a href="https://en.wikipedia.org/wiki/Vowel_reduction">reduced</a>; these reductions <a href="https://en.wikipedia.org/wiki/History_of_Latin#Vowels">can be discerned somewhat in Latin spelling</a>.</p>
+<h3>Romance changes</h3>
+<p>The colloquial varieties of Latin spoken in the Roman Empire diverged into the Romance languages over several centuries. This article introduces Romance sound changes by examining the Romance languages <em>French</em> and <em>Italian</em>.</p>
+<h4>Palatalization in French and Italian</h4>
+<p>Classical Latin, like Proto-Germanic, was a <em>centum</em> language lacking phonemic distinction of palatal consonants; per reconstructed Classical pronunciation, the ideal prounciations of <strong>c</strong> and <strong>g</strong> were [k] and [g], respectively. By contrast, palatalization was likely already underway <a href="https://en.wikipedia.org/wiki/Vulgar_Latin#Consonant_development">in most Vulgar Latin varieties</a>. It is common in Romance languages for <strong>c</strong> and <strong>g</strong> to be pronounced differently depending on the following vowel, with vowels <strong>i</strong> and <strong>e</strong> reliably triggering palatalization:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><em>Orthography</em></th>
+<th style="text-align:center"><em>Classical Latin pronunciation</em></th>
+<th style="text-align:center"><em>Italian pronunciation</em></th>
+<th style="text-align:center"><em>French pronunciation</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>ci</strong></td>
+<td style="text-align:center">[ki]</td>
+<td style="text-align:center">[t͡ʃi]</td>
+<td style="text-align:center">[si]</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>ce</strong></td>
+<td style="text-align:center">[ke]</td>
+<td style="text-align:center">[t͡ʃe]</td>
+<td style="text-align:center">[se]</td>
+</tr>
+</tbody>
+</table>
+<p>In French palatalization of <strong>ci</strong> and <strong>ce</strong> proceeded all the way
+to <a href="https://en.wikipedia.org/wiki/Assibilation">assibilation</a>,
+which can be compared to the assibilation that occurred as part
+of <a href="https://en.wikipedia.org/wiki/Centum_and_satem_languages">satemization</a>.</p>
+<h4>French final consonant elision</h4>
+<p>In modern French, consonants at the ends of words tend not to be pronounced; however, there are exceptions:</p>
+<ul>
+<li>There are words for which the final consonant must always be pronounced
+<ul>
+<li>for instance, this is true <a href="https://en.wikipedia.org/wiki/French_orthography#Consonants_and_combinations_of_consonant_letters">of most words ending in <strong>c</strong> or <strong>f</strong></a></li>
+</ul>
+</li>
+<li>Based on the following word, <a href="https://en.wikipedia.org/wiki/Liaison_%28French%29"><em>liaison</em></a> can force a word-final consonant that would normally be silent to be pronounced. Liaison does not always occur, however, and the decision of whether or not to employ liaison in a particular situation <a href="https://en.wikipedia.org/wiki/Liaison_%28French%29#Constraints_on_liaison">can be complex</a>.</li>
+</ul>
+<h3>Notable references</h3>
+<p>Allen, Joseph Henry, Greenough, James Bradstreet, and Mahoney, Anne. <em>Allen And Greenough’s New Latin Grammar.</em> Focus, 2001 [1975, 1903].<br>
+Clackson, James and Horrocks, Geoffrey. <em>The Blackwell History of the Latin Language.</em> Wiley-Blackwell, 2007.<br>
+Solodow, Joseph B. <em>Latin Alive: The Survival of Latin in English and the Romance Languages.</em> Cambridge University Press, 2010.</p>
+<h2>Review</h2>
+<p>Recall the French-Italian-English-German etymological cognates noted in the Introduction:</p>
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/g%CA%B7em-"><strong>*gʷem-</strong></a> [Proto-Indo-European <em>“step”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/g%CA%B7enj%C5%8D"><strong>*gʷenjō</strong></a> [Proto-Italic <em>“come”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/venio"><strong>veniō · venīre · vēnī · ventum</strong></a> [Latin <em>“come, approach”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/venire#Italian"><strong>venire</strong></a> [Italian <em>“come, arrive”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/venir#French"><strong>venir</strong></a> [French <em>“come”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/kweman%C4%85"><strong>*kwemaną</strong></a> [Proto-Germanic <em>“come”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/kommen#German"><strong>kommen</strong></a> [German <em>“come”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/come#English"><strong>come</strong></a> [English <em>“come”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/d%CA%B0eh%E2%82%81-"><strong>*d<sup>h</sup>eh<sub>1</sub>-</strong></a> [Proto-Indo-European <em>“do, put, place”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Italic/faki%C5%8D"><strong>*fakio</strong></a> [Proto-Italic <em>“make”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/facio#Latin"><strong>faciō · facere · fēcī · factum</strong></a> [Latin <em>“do, make”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/fare#Italian"><strong>fare</strong></a> [Italian <em>“do, make”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/faire#French"><strong>faire</strong></a> [French <em>“do, make”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/d%C5%8Dn%C4%85"><strong>*dōną</strong></a> [Proto-Germanic <em>“do, make, put, place”</em>]
+<ul>
+<li><a href="https://en.wiktionary.org/wiki/tun#German"><strong>tun</strong></a> [German <em>“do, put”</em>]</li>
+<li><a href="https://en.wiktionary.org/wiki/do#English"><strong>do</strong></a> [English <em>“do”</em>]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Sound changes that were introduced in this article are readily identifiable:</p>
+<ul>
+<li>Loss of IE laryngeal <strong>*h<sub>1</sub></strong></li>
+<li>IE <strong>*d<sup>h</sup></strong> → Latin <strong>f</strong> &nbsp;(PIE → Italic: aspirate-to-fricative shift)</li>
+<li>PIt <strong>*g<sup>w</sup></strong> → Latin <strong>v</strong> &nbsp;(Italic shift, Latin outcome distinct from Osco-Umbrian outcome)</li>
+<li>IE <strong>*d<sup>h</sup></strong> → PGm <strong>*d</strong> &nbsp;(Grimm’s Law)</li>
+<li>IE <strong>*g<sup>w</sup></strong> → PGm <strong>*kw</strong> &nbsp;(Grimm’s Law)</li>
+<li>PGm <strong>*d</strong> → German <strong>t</strong> &nbsp;(High German Consonant Shift)</li>
+</ul>
+<p>Even after identifying all of these sound changes, many aspects of the etymologies above remain to be explained. This article only scratches the surface of a deep and fascinating field of study.</p>
+<h2>Further study</h2>
+<p>Wiktionary is a convenient source for piecing together more info on etymology and cognates. That said, Wiktionary entries are not infallible; as with other crowdsourced info, double-checking using other sources is highly advisable.</p>
+<p>Often the sound changes explored in this article can also be observed in other contexts, even beyond Indo-European:</p>
+<ul>
+<li>[θ]→[f]
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Th-fronting">Th-fronting</a> dialects of English</li>
+</ul>
+</li>
+<li>[x]→[f]
+<ul>
+<li>Emergence of the modern English pronunciations of words like <strong>laugh</strong> and <strong>tough</strong></li>
+</ul>
+</li>
+<li>[p]→[ɸ] or [p]→[f]
+<ul>
+<li>Occurred in the historical development of Japanese, either <a href="https://en.wikipedia.org/wiki/Late_Middle_Japanese#/h/_and_/p/">during the Old Japanese phase</a> <a href="https://en.wikipedia.org/wiki/Old_Japanese#Consonants">or by Early Middle Japanese</a></li>
+<li>Word-initially, <a href="https://en.wikipedia.org/wiki/Regular_sound_correspondences_between_Hungarian_and_other_Uralic_languages#Word-initially">Hungarian <strong>f</strong> corresponds to Finnish <strong>p</strong> in Uralic cognates</a></li>
+</ul>
+</li>
+</ul>
+<h2>Additional references</h2>
+<p>Bodmer, Frederick. <em>The Loom of Language: An Approach to the Mastery of Many Languages</em>. W. W. Norton Company, 1985 [1943].<br>
+Comrie, Bernard. <em>The World’s Major Languages.</em> Oxford University Press, USA, 1990.<br>
+Durrell, Martin. <em>Hammer’s German Grammar and Usage.</em> Routledge, 2002.<br>
+Diamond, Robert E. <em>Old English: Grammar and Reader.</em> Wayne State University Press, 1970.<br>
+Frellesvig, Bjarke. <em>A History of the Japanese Language.</em> Cambridge University Press, 2011.<br>
+Lindemann, Frederik Otto. <em>Introduction to the ‘Laryngeal Theory.’</em> Oxford University Press, 1988 [1970].<br>
+Moreland, Floyd L. and Fleischer, Rita M. <em>Latin: An Intensive Course.</em> University of California Press, 1977.<br>
+Payne, Thomas E. <em>Describing Morphosyntax.</em> Cambridge University Press, 1997.<br>
+Stern, Guy and Bleiler, E.F. <em>Essential German Grammar.</em> Dover Publications, 1961.<br>
+Wheelock, Frederic M. and LaFleur, Richard A. <em>Wheelock’s Latin, 7th ed.</em> Collins Reference, 2011 [1956].</p>
+<hr>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+  </body>
+</html>

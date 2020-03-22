@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html data-markdown-preview-plus-context="html-export">
+  <head>
+    <meta charset="utf-8" />
+    <title>lang-learning-for-english.md</title>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 30px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+body {
+  overflow: initial !important;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 30px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+body > *:first-child {
+  margin-top: 0 !important;
+}
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+body .absent {
+  color: #c00;
+}
+body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+body .anchor:focus {
+  outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+body h1 tt,
+body h2 tt,
+body h3 tt,
+body h4 tt,
+body h5 tt,
+body h6 tt,
+body h1 code,
+body h2 code,
+body h3 code,
+body h4 code,
+body h5 code,
+body h6 code {
+  font-size: inherit;
+}
+body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+body h1 .anchor {
+  line-height: 1;
+}
+body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+body h2 .anchor {
+  line-height: 1;
+}
+body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+body h3 .anchor {
+  line-height: 1.2;
+}
+body h4 {
+  font-size: 1.25em;
+}
+body h4 .anchor {
+  line-height: 1.2;
+}
+body h5 {
+  font-size: 1em;
+}
+body h5 .anchor {
+  line-height: 1.1;
+}
+body h6 {
+  font-size: 1em;
+  color: #777;
+}
+body h6 .anchor {
+  line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+body ul,
+body ol {
+  padding-left: 2em;
+}
+body ul.no-list,
+body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body li > p {
+  margin-top: 16px;
+}
+body dl {
+  padding: 0;
+}
+body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+body blockquote > :first-child {
+  margin-top: 0;
+}
+body blockquote > :last-child {
+  margin-bottom: 0;
+}
+body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+body table th {
+  font-weight: bold;
+}
+body table th,
+body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .emoji {
+  max-width: none;
+}
+body span.frame {
+  display: block;
+  overflow: hidden;
+}
+body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+body span.frame span img {
+  display: block;
+  float: left;
+}
+body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+body span.float-left span {
+  margin: 13px 0 0;
+}
+body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+body code,
+body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+body code:before,
+body tt:before,
+body code:after,
+body tt:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+body code br,
+body tt br {
+  display: none;
+}
+body del code {
+  text-decoration: inherit;
+}
+body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+body .highlight {
+  margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+body pre {
+  word-wrap: normal;
+}
+body pre code,
+body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+body pre code:before,
+body pre tt:before,
+body pre code:after,
+body pre tt:after {
+  content: normal;
+}
+body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+span.critic.comment > span {
+  background-color: #fff;
+}
+a {
+  color: #337ab7;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #e5c07b;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>Language Learning for Insights into English</h1>
+<p>by <a href="https://github.com/jnfischer/linguistics-drafts">John Fischer</a></p>
+<p><em><strong>Note:</strong> This is an early draft! Final version to be published elsewhere after revisions.</em></p>
+<h2>Introduction</h2>
+<p>Through studying traditional <a href="https://en.wikipedia.org/wiki/English_grammar">English grammar</a>,
+one can learn about how a ‘standard’ variety of English is prescribed to function.
+However, while traditional grammar may give prescriptive answers to questions of <em>how</em> modern English functions,
+it’s comparatively silent on <em>why</em> modern English is as it is. Why, for instance, does English have noticeable
+similarities to each of French and German yet is distinct from both?</p>
+<p>Human languages <a href="https://en.wikipedia.org/wiki/Language_change">change</a> and <a href="https://en.wikipedia.org/wiki/Language_contact">influence one another</a> over time, and languages carry evidence of this historical development in their structure.
+One way to explore this history is to trace etymologies of individual words.
+<a href="https://medium.com/@andreas_simons/the-english-language-is-a-lot-more-french-than-we-thought-heres-why-4db2db3542b3">An article on Medium</a> presents an etymology scraping procedure automated using Python to classify the most frequently-used English words by origin (with frequency based on <a href="https://en.wikipedia.org/wiki/Corpus_of_Contemporary_American_English">COCA</a>). Given the automated approach, the article’s findings are rough estimates; that said, the area graph produced by the analysis shows the following:</p>
+<ul>
+<li>A majority of the 1,000 most frequently-used words in English were identified as tracing back to <a href="https://en.wikipedia.org/wiki/Old_English">Old English</a>, the language of the <a href="https://en.wikipedia.org/wiki/Anglo-Saxons">Anglo-Saxons</a></li>
+<li>However, among the 5,000 most frequently-used words in English, 56% were identified as having French or Latin origin</li>
+</ul>
+<p>This document explores three languages that English speakers can study to gain insights into the English language: <strong>French</strong>, <strong>German</strong>, and <strong>Latin</strong>. Seeing which of these languages are related and in which ways gives insights into why the English language is structured as it is.</p>
+<p>French and Latin are straightforward choices given the etymology analysis linked above; however, why has German been chosen? An important motivation is the concept of a <a href="https://en.wikipedia.org/wiki/Language_family">language family</a>, a collection of languages that evolved from a common ancestral language.</p>
+<p>French is one of the <a href="https://en.wikipedia.org/wiki/Romance_language">Romance languages</a>, the languages that evolved from Latin — specifically <a href="https://en.wikipedia.org/wiki/Vulgar_Latin">Vulgar Latin</a>, a term encompassing the colloquial varieties of the Latin language. English is classified as a <a href="https://en.wikipedia.org/wiki/Germanic_languages">Germanic language</a>, as is German; since no written record of the common Germanic ancestral language is known to exist, the <a href="https://en.wikipedia.org/wiki/Proto-Germanic_language">Proto-Germanic language</a> has been <a href="https://en.wikipedia.org/wiki/Linguistic_reconstruction">reconstructed</a> based on languages for which evidence exists.</p>
+<p>More broadly, English, German, French, and Latin are all classified as <a href="https://en.wikipedia.org/wiki/Indo-European_languages">Indo-European languages</a>. English, French, and German, having undergone centuries of contact, are theorized to form a <a href="https://en.wikipedia.org/wiki/Sprachbund">Sprachbund</a> called <a href="https://en.wikipedia.org/wiki/Standard_Average_European">Standard Average European</a> (SAE). Comparing English to French, German, and Latin involves touching on some of the common features of SAE languages.</p>
+<h2>French</h2>
+<p><a href="https://en.wikipedia.org/wiki/Old_English">Old English</a>, the language of the <em>Anglo-Saxons</em>,
+was much closer to other Germanic languages in vocabulary and grammar
+than modern English. After <a href="https://en.wikipedia.org/wiki/Norman_conquest_of_England">Norman conquest of England</a>
+in the 11th century CE, French — specifically <a href="https://en.wikipedia.org/wiki/Anglo-Norman_language">Anglo-Norman</a> —
+was <a href="https://en.wikipedia.org/wiki/Prestige_%28sociolinguistics%29">favored</a> over English for prestigious and administrative communication.
+Instead of dying out, the English language
+<a href="https://en.wikipedia.org/wiki/Influence_of_French_on_English#Norman_conquest_of_England_and_its_consequences">adapted and evolved</a>.
+The resulting language,
+<a href="https://en.wikipedia.org/wiki/Middle_English">Middle English</a>, was dramatically different
+from Old English, as contact with French had altered its pronunciation, spelling, vocabulary, and grammar.</p>
+<p>Modern French is not a direct descendant of Anglo-Norman; even so, by studying modern French
+an English speaker can quickly improve their awareness of which aspects of the English language
+were influenced by French. Along the way, however, a learner of French will encounter features either entirely absent in English or present yet quite different in form:</p>
+<ul>
+<li>French nouns have <a href="https://en.wikipedia.org/wiki/Grammatical_gender">grammatical gender</a>, a feature of many of the world’s most widely spoken languages. Adjectives in French must agree in gender (and in <a href="https://en.wikipedia.org/wiki/Grammatical_number"><em>number</em></a>) with the nouns they modify; this applies also to possessive pronouns, which must agree in gender not with the <em>possessor</em> (as in English), but with the <em>possessed</em>. Old English nouns also had grammatical gender, but by Middle English this distinction had been lost. Gendered pronouns remain in modern English, but they now <a href="https://en.wikipedia.org/wiki/Gender_in_English#Personal_pronouns">indicate <em>natural</em> gender</a>.
+<ul>
+<li>For example, French has three different words corresponding to the English definite article <strong>the</strong>, depending on the gender and number of the noun the article is modifying:
+<ul>
+<li><strong>le</strong> (masculine singular)</li>
+<li><strong>la</strong> (feminine singular)</li>
+<li><strong>les</strong> (plural, either gender)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>French verbs, especially in written form, are extensively <a href="https://en.wikipedia.org/wiki/French_conjugation">inflected</a> to indicate features of a verbal state or action such as <a href="https://en.wikipedia.org/wiki/Grammatical_tense">tense</a> and <a href="https://en.wikipedia.org/wiki/Grammatical_mood">mood</a>. Inflection, especially of verbs, is prominent among many of the world’s most widely spoken languages. While both Romance and Germanic languages feature inflection of verbs, Romance languages’ verbal inflection tends to be more complex than that of Germanic languages. English has retained some verbal inflection (<strong>be</strong>, <strong>am</strong> <strong>is</strong>, <strong>are</strong>, <strong>was</strong>, <strong>were</strong>), but Old English verbal inflection was more complex.</li>
+</ul>
+<p>Centuries before Norman rule in England, much of modern France was <a href="https://en.wikipedia.org/wiki/Francia">ruled by Frankish kings</a>, culminating in the reign of <a href="https://en.wikipedia.org/wiki/Charlemagne">Charlemagne</a>. Consequently the <a href="https://en.wikipedia.org/wiki/Frankish_language">Frankish language</a>, <a href="https://en.wikipedia.org/wiki/History_of_the_Dutch_language">the ancestor of modern Dutch</a>,
+<a href="https://en.wikipedia.org/wiki/Frankish_language#Influence_on_Old_French_and_Middle_Latin">has influenced the vocabulary of French</a>. The English word <a href="https://en.wiktionary.org/wiki/guard#Etymology"><strong>guard</strong></a>, for instance, was borrowed from French, which in turn borrowed the word from Frankish. Meanwhile the English word <a href="https://en.wiktionary.org/wiki/ward#Etymology_3"><strong>ward</strong></a> is cognate to <strong>guard</strong> but of direct Germanic lineage. As cognates arriving in modern English by different routes, <strong>guard</strong> and <strong>ward</strong> constitute an English <a href="https://en.wikipedia.org/wiki/Doublet_%28linguistics%29"><em>doublet</em></a>.</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_French_words_of_Germanic_origin">A sizable proportion of French words are of Germanic origin</a>; thus, if one notices an English word is of likely French origin, it is probable <em>but not certain</em> that the word evolved from Latin. With further Romance and Germanic study — for instance, studying German and Latin, both presented in this article — one can more readily distinguish the deeper origins of French loanwords in English.</p>
+<h2>German</h2>
+<p>English is a Germanic language. Despite considerable influence of French, Latin, and other languages, the most frequently-used words in English are of Germanic origin. The grammar of English, though different in many ways from that of its ancestor Old English, retains many traits in common with other Germanic languages. Studying a Germanic language can help a speaker of English to become more aware of which portions of English are Germanic in origin.</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers#Ethnologue_%282019,_22nd_edition%29">With around 132 million speakers</a>, German is the most widely spoken Germanic language next to English. It is spoken in numerous varieties of varying mutual intelligibility, with <a href="https://en.wikipedia.org/wiki/Dialect_continuum">dialect continua</a> observable as one traverses the German-speaking area of Europe. A formalized variety of German, <a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a>, facilitates communication among the various German-speaking regions. (That said, even Standard German exhibits some regional variation.)</p>
+<p>As Germanic languages, German and English are theorized to have evolved from a common ancestor, <a href="https://en.wikipedia.org/wiki/Proto-Germanic_language">Proto-Germanic</a>, spoken over 2,000 years ago in northern Europe. Although the sound systems of English and German have evolved differently, words in English and German that have a common Proto-Germanic origin (Germanic <a href="https://en.wikipedia.org/wiki/Cognate">cognates</a>) are still readily recognizable. Knowing both some French and some German can help an English speaker assess whether an English word is more likely to be Germanic or Latinate in origin.</p>
+<p>When one examines Germanic cognates in English and German, the consonant sounds are often different; however, as one examines numerous cognates, patterns become evident in these differences. Many if not most of these differences in consonant sounds are explained by a phenomenon called the <a href="https://en.wikipedia.org/wiki/High_German_consonant_shift">High German consonant shift</a>; this shift occurred in the historical development of the High German varieties upon which Standard German is based.</p>
+<p>As with English and French, for the most part German nouns must be <em>inflected</em> in a form that indicates certain properties of that noun as it is being used in discourse. For German these properties are <a href="https://en.wikipedia.org/wiki/Grammatical_gender"><em>gender</em></a>, <a href="https://en.wikipedia.org/wiki/Grammatical_number"><em>number</em></a> (<em>singular</em> or <em>plural</em>), <a href="https://en.wikipedia.org/wiki/Definiteness"><em>definiteness</em></a>, and <a href="https://en.wikipedia.org/wiki/Grammatical_case"><em>case</em></a>. Case is a grammatical trait primarily used to indicate a noun’s <a href="https://en.wikipedia.org/wiki/Thematic_relation">role in discourse</a> — agent of an action, experiencer of a state, recipient, etc.</p>
+<p>Four cases are expressible via German noun inflection:</p>
+<ul>
+<li><em>Nominative</em> (indicating a <em>subject</em>)</li>
+<li><em>Accusative</em> (indicating a <em>direct object</em>)</li>
+<li><em>Dative</em> (indicating an <em>indirect object</em> or <em>recipient</em>)</li>
+<li><em>Genitive</em> (indicating that which <em>possesses</em> or <em>contains</em>)</li>
+</ul>
+<p>The earliest recorded Germanic languages inflected nouns for these cases (and sometimes also for final vestiges of a disappearing <em>instrumental</em> case); Old English did so, as did Old Norse and Gothic. In addition to German, Icelandic continues to inflect nouns for these four cases.</p>
+<p>Whereas French has two noun genders, German has three: <em>feminine</em>, <em>masculine</em>, and <em>neuter</em>. Definiteness is marked using definite and indefinite articles, as in French; however, whereas in French the form of a noun’s article varies based on gender and number, in German the form varies based on gender, number, <em>and case</em>. The following table, well-known to learners of German, illustrates this variation (with genders labeled M, N, F for short):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><em>Case</em></th>
+<th style="text-align:center">M singular</th>
+<th style="text-align:center">N singular</th>
+<th style="text-align:center">F singular</th>
+<th style="text-align:center">Plural (all genders)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Nominative</em></td>
+<td style="text-align:center">der</td>
+<td style="text-align:center">das</td>
+<td style="text-align:center">die</td>
+<td style="text-align:center">die</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Accusative</em></td>
+<td style="text-align:center">den</td>
+<td style="text-align:center">das</td>
+<td style="text-align:center">die</td>
+<td style="text-align:center">die</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Dative</em></td>
+<td style="text-align:center">dem</td>
+<td style="text-align:center">dem</td>
+<td style="text-align:center">der</td>
+<td style="text-align:center">den</td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Genitive</em></td>
+<td style="text-align:center">des</td>
+<td style="text-align:center">des</td>
+<td style="text-align:center">der</td>
+<td style="text-align:center">der</td>
+</tr>
+</tbody>
+</table>
+<p>Examining this chart, one cannot consistently separate each article into phonological parts that indicate just gender, just number, and just case — there isn’t a consistent letter or syllable that always means <em>masculine</em>, another for <em>dative</em>, etc.  Put another way, German exhibits <a href="https://en.wikipedia.org/wiki/Fusional_language">fusional</a> morphology, with each definite article collectively marking three separate characteristics (gender, number, and case) using a single ‘non-compound’ word.</p>
+<ul>
+<li>Although sixteen distinct combinations are presented in the table — and even more combinations would be plausible had the table not taken advantage of the fact that plural articles are the same regardless of gender — German has only six distinct definite articles: <strong>das</strong>, <strong>dem</strong>, <strong>den</strong>, <strong>der</strong>, <strong>des</strong>, and <strong>die</strong>. Each of these six articles occupies more than one slot in the table; thus, each article represents more than one possible combination of gender, number, and case. In linguistics such ‘overloading’ is called <a href="https://en.wikipedia.org/wiki/Syncretism_%28linguistics%29">syncretism</a>.</li>
+</ul>
+<p>In English the case roles of nouns are indicated primarily by word order, with deviations sometimes possible through the use of prepositions:</p>
+<ul>
+<li>The girl lent the boy the book.</li>
+<li>The girl lent the book to the boy.</li>
+</ul>
+<p>If a language explicitly and unambiguously marks the cases of its nouns, then the word order of a sentence can become more flexible. There are languages whose case markings are unambiguous or nearly so — for instance, <a href="https://en.wikipedia.org/wiki/Japanese_grammar#Grammatical_case">Japanese</a>, <a href="https://en.wikipedia.org/wiki/Korean_grammar#Postpositions">Korean</a>, and <a href="https://en.wikipedia.org/wiki/Turkish_grammar#Case">Turkish</a>. (In each of these languages, a dedicated phonological unit serves solely to indicate the case — such noun morphology is not fusional as in German, but rather <a href="https://en.wikipedia.org/wiki/Agglutination">agglutinative</a>.)</p>
+<p>Because German marks noun case explicitly, word order is freer than in English; however, because of German’s fusional morphology and syncretism, identifying a clause’s subject, object, or direct object isn’t as simple as searching for a single particle that specifically indicates case. Knowing the gender of German nouns is crucial as this narrows down significantly which case a given article could represent. While there are patterns by which one can guess a noun’s gender by its pronunciation/spelling, even complex schemes for deducing German noun gender are not comprehensive; as with French, learners of German are often encouraged to memorize nouns with their nominative singular definite articles attached (<strong>die Katze</strong>, <strong>das Boot</strong>).</p>
+<p>In German sentences, nouns may be verb arguments or they may be the complements of prepositions. By and large, <a href="https://en.wikipedia.org/wiki/German_grammar#Prepositions">German prepositions</a> ‘take’ a specific grammatical case; this means that nouns serving as complement for a preposition must be marked for the case in question. Speaking very broadly and roughly, prepositions taking the dative case will concern <em>position</em> or <em>out-from</em> motion, whereas prepositions taking the accusative case will concern <em>action</em> or <em>into/towards</em> motion. Some German prepositions <a href="https://en.wikipedia.org/wiki/Casally_modulated_preposition#Bigovernate_prepositions_in_German">can take either the accusative or the dative case</a>; for these prepositions the case of the complement affects the meaning of the prepositional phrase as a whole.</p>
+<p>While word order in German can be freer than in English thanks to case inflection of nouns, each German verb is positioned <a href="https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb#German">based on one of two rules depending on the verb’s role in the sentence</a>. Modern English mostly doesn’t follow these rules anymore, but Old English <a href="https://en.wikipedia.org/wiki/Old_English_grammar#Syntax">generally did</a>.</p>
+<h2>Latin</h2>
+<p>Latin may no longer be widely spoken, but its influence on English has been profound. Where does Latin stand relative to the languages of Europe, whether now or in the past?</p>
+<p><a href="https://en.wikipedia.org/wiki/Standard_German">Standard German</a> arose as a common means of communication — especially written communication — for speakers of the many varieties of German. Similarly, Latin was spoken in many varieties across the Roman Empire. The Romans cultivated a literary and administrative variety of Latin: <a href="https://en.wikipedia.org/wiki/Classical_Latin">Classical Latin</a>. Classical Latin was a <a href="https://en.wikipedia.org/wiki/Prestige_%28sociolinguistics%29">prestige language</a> for the Roman Empire; its structure as the ‘correct’ or ‘ideal’ form of Latin was explicitly prescribed. While Classical Latin did change over time, it did so more <a href="https://en.wikipedia.org/wiki/Linguistic_conservatism">slowly</a> than the widely-spoken Vulgar Latin varieties, which diverged into the Romance languages while Classical Latin <a href="https://en.wikipedia.org/wiki/Medieval_Latin">persisted</a> as a prestige language.</p>
+<p>The position of prescribed Latin as a prestige language in Europe continued through <a href="https://en.wikipedia.org/wiki/Renaissance_Latin">the Renaissance</a> into <a href="https://en.wikipedia.org/wiki/New_Latin">the modern era</a>. As science, technology, and commerce advanced, Latin words were borrowed into the vernaculars of Europe, including the Romance languages themselves. For example, the French words <a href="https://en.wiktionary.org/wiki/chose#French"><em>chose</em></a> and <a href="https://en.wiktionary.org/wiki/cause#French"><em>cause</em></a> are a cognate <a href="https://en.wikipedia.org/wiki/Doublet_%28linguistics%29">doublet</a>, both having arisen from Latin <em>causa</em>; <em>chose</em> was inherited while <em>cause</em> was borrowed. English has <a href="https://en.wikipedia.org/wiki/Doublet_%28linguistics%29#English">many such doublets</a>.</p>
+<p>One who has studied French and German already has several footholds for learning Latin. Notable examples:</p>
+<ul>
+<li><em><strong>French</strong></em>
+<ul>
+<li>Even though French has diverged considerably from its ancestor language, the influence of Latin remains dominant. Comparing French verb conjugation to Latin verb conjugation, the similarities are glaring and dramatic.</li>
+<li>Experience with French’s nasalization of vowels is helpful for cultivating <a href="https://en.wikipedia.org/wiki/Latin_spelling_and_pronunciation#Vowel_nasalization">similar nasalization</a> in the reconstructed pronunciation of Classical Latin.</li>
+</ul>
+</li>
+<li><em><strong>German</strong></em>
+<ul>
+<li>Just as German has a system of <em>grammatical case</em> for its nouns — with inflection used to present a noun as <em>nominative</em>, <em>accusative</em>, <em>dative</em>, or <em>genitive</em> — Latin also indicates grammatical case using inflection. The Latin cases are called <em>nominative</em>, <em>accusative</em>, <em>dative</em>, <em>genitive</em>, <em>ablative</em>, <em>vocative</em>, and (only in certain vestigial cases) <em>locative</em>. (These case names, typical in linguistic discourse, are themselves of Latin origin.)</li>
+<li>For German nouns serving as complements of a preposition, a broad and rough pattern is that the <em>dative</em> case correlates with <em>position</em> or <em>out-from</em> motion, whereas the <em>accusative</em> case correlates with <em>action</em> or <em>into/towards</em> motion. This is also <a href="https://en.wikipedia.org/wiki/Latin_grammar#Prepositions">generally observable in Latin</a>: the <em>ablative</em> case correlates with <em>position</em> or <em>out-from</em> motion, whereas the <em>accusative</em> case correlates with <em>action</em> or <em>into/towards</em> motion.</li>
+</ul>
+</li>
+</ul>
+<p>There are aspects of Latin, however, which will be unfamiliar even for one who has studied French and German. For instance, Latin does not have <a href="https://en.wikipedia.org/wiki/Article_%28grammar%29">articles</a>. In Latin, <a href="https://en.wikipedia.org/wiki/Demonstrative">demonstratives</a> can be used if there is a need to explicitly indicate the referent is already present in the context of the discourse; indeed, it is from some of these demonstratives that definite articles developed in the Romance languages. Articles developed from demonstratives in Germanic languages as well; in Old English, a separate definite article form <a href="https://en.wikipedia.org/wiki/Old_English_grammar#Definite_articles_and_demonstratives">had not yet separated</a> from the demonstrative forms.</p>
+<h2>Further study</h2>
+<p>Having both native-level proficiency in English and some proficiency
+in French, German, and Latin opens the door to the study
+of many other prominent languages.</p>
+<h3>Modern languages</h3>
+<p>Familiarity with French and German is helpful for tackling other languages that fit the <a href="https://en.wikipedia.org/wiki/Standard_Average_European">Standard Average European</a> paradigm.</p>
+<p>The Romance languages have considerable similarities; having studied French,
+much of the vocabulary and grammar of another Romance language will appear
+familiar (though <a href="https://en.wikipedia.org/wiki/False_cognate">false cognates</a>
+can present a challenge).</p>
+<p>Proficiency and English and German is useful for studying other Germanic languages. For instance, <a href="https://en.wikipedia.org/wiki/Middle_Low_German">Middle Low German</a>, as a common language for commerce in northern Europe (notably via the <a href="https://en.wikipedia.org/wiki/Hanseatic_League">Hanseatic League</a>), <a href="http://germanic.eu/Middle-Low-German-loanwords-in-the-Scandinavian-languages.htm">influenced the Scandinavian languages</a>.</p>
+<h3>Indo-European studies</h3>
+<p>Both the Germanic languages and the <a href="https://en.wikipedia.org/wiki/Italic_languages">Italic languages</a> (which include Latin, ancient languages closely related to Latin such as Oscan and Umbrian, and the Romance languages) are more broadly classified as <a href="https://en.wikipedia.org/wiki/Indo-European_languages">Indo-European</a>. Many other prominent modern languages are similarly classifed as Indo-European, for instance Russian, Hindi, Farsi, and Greek; an estimated 3.2 billion people <a href="https://en.wikipedia.org/wiki/List_of_language_families#Language_families_%28non-sign%29">speak an Indo-European language</a>.</p>
+<p>Latin is a strong starting point for further Indo-European language studies. Knowledge of the structure of Latin helps in studying <a href="https://en.wikipedia.org/wiki/Ancient_Greek">Ancient Greek</a>, and familiarity with Latin and Greek is helpful in the study of <a href="https://en.wikipedia.org/wiki/Sanskrit">Sanskrit</a>.</p>
+<p>The primary change separating Germanic from other Indo-European languages is a major consonant sound shift, <a href="https://en.wikipedia.org/wiki/Grimm%27s_law">Grimm’s Law</a>. This shift is rather similar to the later <a href="https://en.wikipedia.org/wiki/High_German_consonant_shift">High German Consonant Shift</a> noted in the section on German. Familiarity with Grimm’s Law is crucial for identifying Germanic-Romance cognates in the English vocabulary.</p>
+<h2>Additional references</h2>
+<p>Allen, Joseph Henry, Greenough, James Bradstreet, and Mahoney, Anne. <em>Allen And Greenough’s New Latin Grammar.</em> Focus, 2001 [1975, 1903].<br>
+Bodmer, Frederick. <em>The Loom of Language: An Approach to the Mastery of Many Languages</em>. W. W. Norton Company, 1985 [1943].<br>
+Byon, Andrew Sangpil. <em>Modern Korean Grammar: A Practical Guide.</em> Routledge, 2017.<br>
+Choo, Miho and Kwak, Hye-Young. <em>Using Korean.</em> Cambridge University Press, 2008.<br>
+Clackson, James and Horrocks, Geoffrey. <em>The Blackwell History of the Latin Language.</em> Wiley-Blackwell, 2007.<br>
+Comrie, Bernard. <em>Language Universals and Linguistic Typology: Syntax and Morphology.</em> University of Chicago Press, 1989.<br>
+Comrie, Bernard. <em>The World’s Major Languages.</em> Oxford University Press, USA, 1990.<br>
+Durrell, Martin. <em>Hammer’s German Grammar and Usage.</em> Routledge, 2002.<br>
+Diamond, Robert E. <em>Old English: Grammar and Reader.</em> Wayne State University Press, 1970.<br>
+Lehmann, Winfred P. <em>Theoretical Bases of Indo-European Linguistics.</em> Routledge, 1996.<br>
+Levin, Beth. <em>English Verb Classes and Alternations: A Preliminary Investigation.</em> University of Chicago Press, 1993.<br>
+Makino, Seiichi and Tsutsui, Michio. <em>A Dictionary of Intermediate Japanese Grammar.</em> The Japan Times, Ltd., 2000.<br>
+Moreland, Floyd L. and Fleischer, Rita M. <em>Latin: An Intensive Course.</em> University of California Press, 1977.<br>
+Payne, Thomas E. <em>Describing Morphosyntax.</em> Cambridge University Press, 1997.<br>
+Prokosch, Eduard. <em>A Comparative Germanic Grammar.</em> Tiger Xenophon, 2009 [1939].<br>
+Ringe, Donald A. <em>From Proto-Indo-European to Proto-Germanic, 2nd ed.</em> Oxford University Press, 2017.<br>
+Ringe, Donald A. and Taylor, Ann. <em>The Development of Old English.</em> Oxford University Press, 2014.<br>
+Robinson, Orrin W. <em>Old English and Its Closest Relatives: A Survey of the Earliest Germanic Languages.</em> Stanford University Press, 1993.<br>
+Shibatani, Masayoshi. <em>The Languages of Japan.</em> Cambridge University Press, 2006.<br>
+Solodow, Joseph B. <em>Latin Alive: The Survival of Latin in English and the Romance Languages.</em> Cambridge University Press, 2010.<br>
+Stern, Guy and Bleiler, E.F. <em>Essential German Grammar.</em> Dover Publications, 1961.<br>
+Wheelock, Frederic M. and LaFleur, Richard A. <em>Wheelock’s Latin, 7th ed.</em> Collins Reference, 2011 [1956].<br>
+Wierzbicka, Anna. <em>Semantics: Primes and Universals.</em> OUP Oxford, 1996.</p>
+<hr>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+  </body>
+</html>
